@@ -18,9 +18,14 @@ cc.Class({
 	extends: cc.Component,
 
 	properties: {
+		startPlay: false,
+		isPlayAgain: false,
 		round: true,
 		leftOrRight: -1,
 		gameOver: false,
+		// 星星产生后消失时间的随机范围
+		maxStarDuration: 0,
+		minStarDuration: 0,
 		// score label 的引用
 		scoreDisplay: {
 			default: null,
@@ -36,9 +41,11 @@ cc.Class({
 			default: null,
 			type: cc.Prefab
 		},
-		// 星星产生后消失时间的随机范围
-		maxStarDuration: 0,
-		minStarDuration: 0,
+		// 这个属性引用了开始按钮
+		playBtnPrefab: {
+			default: null,
+			type: cc.Prefab
+		},
 		// 地面节点，用于确定星星生成的高度
 		ground: {
 			default: null,
@@ -52,22 +59,35 @@ cc.Class({
 	},
 
 	onLoad: function onLoad() {
+		console.log('isPlayAgain-----', this.isPlayAgain);
 		var manager = cc.director.getCollisionManager();
 		manager.enabled = true;
+		this.initFunc();
+	},
+
+	initFunc: function initFunc() {
 		// manager.enabledDebugDraw = true;
 		this.score = 0;
 		// 获取地平面的 y 轴坐标
 		this.groundY = this.ground.y + this.ground.height / 2;
 		this.player.getComponent('Player').game = this;
 		this.ground.getComponent('ground').game = this;
+		this.newPlayBtn();
 		// 生成一个新的星星
-		this.spawnNewStar();
+		// this.spawnNewStar();
 		this.touchControl();
 	},
 
 	newPlayAgainBtn: function newPlayAgainBtn() {
 		var newBtn = cc.instantiate(this.playAgainBtnPrefab);
 		this.node.addChild(newBtn);
+		newBtn.setPosition(cc.p(0, 30));
+	},
+
+	newPlayBtn: function newPlayBtn() {
+		var newBtn = cc.instantiate(this.playBtnPrefab);
+		this.node.addChild(newBtn);
+		newBtn.getComponent('Play_Btn').game = this;
 		newBtn.setPosition(cc.p(0, 30));
 	},
 
@@ -117,6 +137,13 @@ cc.Class({
 		return num;
 	},
 
+	startPlayFunc: function startPlayFunc() {
+		var self = this;
+		setTimeout(function () {
+			self.startPlay = true;
+		}, 500);
+	},
+
 	gameOverShow: function gameOverShow() {
 		var temp = this.scoreDisplay.string;
 		this.scoreDisplay.string = 'GAME OVER \n' + 'YOUR SCORE IS:' + this.score.toString();
@@ -125,7 +152,9 @@ cc.Class({
 
 	touchControl: function touchControl() {
 		this.node.on(cc.Node.EventType.TOUCH_START, function (event) {
-			this.player.getComponent('Player').playerJump();
+			if (this.startPlay) {
+				this.player.getComponent('Player').playerJump();
+			}
 		}, this);
 	},
 	// LIFE-CYCLE CALLBACKS:

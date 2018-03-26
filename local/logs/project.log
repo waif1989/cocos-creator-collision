@@ -1,15 +1,14 @@
-2018-03-23T03:36:51.591Z - normal: Load ~/.CocosCreator/settings.json
-2018-03-23T03:36:51.595Z - normal: checking language setting...
-2018-03-23T03:36:51.595Z - normal: Language: zh
-2018-03-23T03:36:53.275Z - success: protocol editor-framework registered
-2018-03-23T03:36:53.275Z - success: protocol app registered
-2018-03-23T03:36:53.275Z - success: protocol theme registered
-2018-03-23T03:36:53.275Z - success: protocol packages registered
-2018-03-23T03:36:53.275Z - success: protocol unpack registerred
-2018-03-23T03:36:53.275Z - success: protocol disable-commonjs registerred
-2018-03-23T03:36:53.456Z - normal: failed to connect login server... skipping login
-2018-03-23T03:36:53.458Z - normal: Check project D:\myprojects\cocos-creater\TestProject1
-2018-03-23T03:36:53.461Z - error: { Error: read ECONNRESET
+2018-03-26T02:07:08.187Z - normal: Load ~/.CocosCreator/settings.json
+2018-03-26T02:07:08.192Z - normal: checking language setting...
+2018-03-26T02:07:08.192Z - normal: Language: zh
+2018-03-26T02:07:11.070Z - success: protocol editor-framework registered
+2018-03-26T02:07:11.070Z - success: protocol app registered
+2018-03-26T02:07:11.070Z - success: protocol theme registered
+2018-03-26T02:07:11.070Z - success: protocol packages registered
+2018-03-26T02:07:11.070Z - success: protocol unpack registerred
+2018-03-26T02:07:11.071Z - success: protocol disable-commonjs registerred
+2018-03-26T02:07:11.542Z - normal: failed to connect login server... skipping login
+2018-03-26T02:07:11.544Z - error: { Error: read ECONNRESET
     at exports._errnoException (util.js:1050:11)
     at TLSWrap.onread (net.js:581:26) code: 'ECONNRESET', errno: 'ECONNRESET', syscall: 'read' }
     at D:\CocosCreator\resources\app.asar\share\login\lib\user.js:1:1441
@@ -21,206 +20,46 @@
     at TLSSocket.emit (events.js:191:7)
     at emitErrorNT (net.js:1283:8)
     at _combinedTickCallback (internal/process/next_tick.js:80:11)
-2018-03-23T03:36:53.464Z - normal: Initializing Cocos2d
-2018-03-23T03:36:53.655Z - normal: Initializing Asset Database
-2018-03-23T03:36:53.683Z - success: protocol uuid registerred
-2018-03-23T03:36:53.683Z - success: protocol db registerred
-2018-03-23T03:36:53.683Z - success: protocol thumbnail registerred
-2018-03-23T03:36:53.683Z - normal: Loading editor/builtin packages
-2018-03-23T03:36:53.699Z - success: anysdk loaded
-2018-03-23T03:36:53.801Z - success: assets loaded
-2018-03-23T03:36:53.803Z - success: builder loaded
-2018-03-23T03:36:53.804Z - success: cocos-analytics loaded
-2018-03-23T03:36:53.806Z - success: console loaded
-2018-03-23T03:36:53.808Z - success: hierarchy loaded
-2018-03-23T03:36:53.810Z - success: inspector loaded
-2018-03-23T03:36:53.811Z - success: keystore loaded
-2018-03-23T03:36:53.813Z - success: node-library loaded
-2018-03-23T03:36:53.814Z - success: package-asset loaded
-2018-03-23T03:36:53.816Z - success: preferences loaded
-2018-03-23T03:36:53.817Z - success: project-exporter loaded
-2018-03-23T03:36:53.834Z - success: project-importer loaded
-2018-03-23T03:36:53.835Z - success: project-settings loaded
-2018-03-23T03:36:53.836Z - success: ui-kit loaded
-2018-03-23T03:36:53.837Z - success: ui-grid loaded
-2018-03-23T03:36:53.839Z - success: scene loaded
-2018-03-23T03:36:53.840Z - success: sprite-editor loaded
-2018-03-23T03:36:53.843Z - success: store loaded
-2018-03-23T03:36:53.846Z - success: timeline loaded
-2018-03-23T03:36:53.846Z - normal: Loading builtin packages
-2018-03-23T03:36:53.847Z - success: asset-db-debugger loaded
-2018-03-23T03:36:53.848Z - success: code-editor loaded
-2018-03-23T03:36:53.849Z - success: color-picker loaded
-2018-03-23T03:36:53.850Z - success: package-manager loaded
-2018-03-23T03:36:53.853Z - success: sdkbox loaded
-2018-03-23T03:36:53.857Z - success: tester loaded
-2018-03-23T03:36:53.858Z - success: ui-kit-preview-extra loaded
-2018-03-23T03:36:53.860Z - success: ui-kit-preview loaded
-2018-03-23T03:36:53.861Z - success: ui-tree loaded
-2018-03-23T03:36:54.777Z - normal: Initializing project D:\myprojects\cocos-creater\TestProject1
-2018-03-23T03:36:54.782Z - normal: Loading packages
-2018-03-23T03:36:54.787Z - normal: Watching packages
-2018-03-23T03:36:54.797Z - normal: Run Application
-2018-03-23T03:36:55.147Z - success: preview server running at http://localhost:7456
-2018-03-23T03:36:58.874Z - normal: 1.8.2
-2018-03-23T03:37:14.632Z - error: TypeError: Cannot read property 'nativeWin' of null
-    at Object.e.reply (D:\CocosCreator\resources\app.asar\editor-framework\lib\main\ipc.js:1:1893)
-    at EventEmitter.ipcMain.on.e (D:\CocosCreator\resources\app.asar\editor-framework\lib\main\window.js:1:11349)
-    at emitOne (events.js:96:13)
-    at EventEmitter.emit (events.js:191:7)
-    at _renderer2mainOpts (D:\CocosCreator\resources\app.asar\editor-framework\lib\main\ipc.js:1:2183)
-    at EventEmitter.ipcMain.on.i (D:\CocosCreator\resources\app.asar\editor-framework\lib\main\ipc.js:1:5608)
-    at emitThree (events.js:116:13)
-    at EventEmitter.emit (events.js:197:7)
-    at WebContents.<anonymous> (D:\CocosCreator\resources\electron.asar\browser\api\web-contents.js:247:13)
-    at emitTwo (events.js:106:13)
-    at process.on.t (D:\CocosCreator\resources\app.asar\editor\core\editor-init.js:1:1068)
-    at emitOne (events.js:101:20)
-    at process.emit (events.js:191:7)
-    at process._fatalException (bootstrap_node.js:308:26)
-2018-03-23T03:37:53.240Z - normal: Start building with options : {
-  "androidStudio": true,
-  "apiLevel": "",
-  "appABIs": [],
-  "appKey": "",
-  "appSecret": "",
-  "buildPath": "D:\\myprojects\\cocos-creater\\TestProject1\\build",
-  "debug": false,
-  "dest": "D:\\myprojects\\cocos-creater\\TestProject1\\build\\web-mobile",
-  "encryptJs": true,
-  "excludeScenes": [],
-  "excludedModules": [],
-  "includeAnySDK": false,
-  "includeEruda": false,
-  "includeSDKBox": false,
-  "inlineSpriteFrames": true,
-  "inlineSpriteFrames_native": true,
-  "jailbreakPlatform": false,
-  "md5Cache": false,
-  "mergeStartScene": false,
-  "oauthLoginServer": "",
-  "optimizeHotUpdate": false,
-  "orientation": {
-    "landscapeLeft": true,
-    "landscapeRight": true,
-    "portrait": false,
-    "upsideDown": false
-  },
-  "packageName": "org.cocos2d.TestProject1",
-  "platform": "web-mobile",
-  "previewHeight": "720",
-  "previewWidth": "1280",
-  "privateKey": "",
-  "renderMode": "0",
-  "scenes": [
-    "6207e6ac-9290-40f5-a0d7-d2b131fb567e"
-  ],
-  "sourceMaps": false,
-  "startScene": "6207e6ac-9290-40f5-a0d7-d2b131fb567e",
-  "template": "link",
-  "title": "TestProject1",
-  "useDebugKeystore": true,
-  "vsVersion": "auto",
-  "webOrientation": "auto",
-  "wechatgame": {
-    "appid": "wx6ac3f5090a6b99c5",
-    "orientation": "portrait"
-  },
-  "xxteaKey": "2bdcc510-dfb8-40",
-  "zipCompressJs": true,
-  "project": "D:\\myprojects\\cocos-creater\\TestProject1",
-  "projectName": "TestProject1",
-  "debugBuildWorker": false
-}
-2018-03-23T03:37:53.242Z - normal: Building D:\myprojects\cocos-creater\TestProject1
-2018-03-23T03:37:53.242Z - normal: Destination D:\myprojects\cocos-creater\TestProject1\build\web-mobile
-2018-03-23T03:37:53.511Z - normal: Delete D:\myprojects\cocos-creater\TestProject1\build\web-mobile\**\*
-2018-03-23T03:37:55.875Z - normal: Compiled project javascript file successfully
-2018-03-23T03:37:55.876Z - normal: Start building assets
-2018-03-23T03:37:55.876Z - normal: Start spawn build-worker
-2018-03-23T03:37:56.541Z - normal: Finish spawn build-worker
-2018-03-23T03:37:56.541Z - normal: Start init build-worker
-2018-03-23T03:37:58.349Z - normal: 1.8.2
-2018-03-23T03:37:58.425Z - normal: Finish init build-worker
-2018-03-23T03:37:58.425Z - normal: Start build-assets in worker
-2018-03-23T03:37:58.681Z - normal: Finish build-assets in worker
-2018-03-23T03:37:58.686Z - normal: Finish building assets
-2018-03-23T03:37:58.700Z - normal: Start building raw assets
-2018-03-23T03:37:58.701Z - normal: Start building plugin scripts
-2018-03-23T03:37:58.720Z - normal: Finish building raw assets
-2018-03-23T03:37:58.760Z - normal: Generating main.js from D:\CocosCreator\resources\static\build-templates\shares\main.js
-2018-03-23T03:37:58.795Z - normal: Generating html from D:\CocosCreator\resources\static\build-templates\web-mobile\template\index.html
-2018-03-23T03:37:58.803Z - normal: Built to "D:\myprojects\cocos-creater\TestProject1\build\web-mobile" successfully
-2018-03-23T10:35:02.910Z - normal: Start building with options : {
-  "androidStudio": true,
-  "apiLevel": "",
-  "appABIs": [],
-  "appKey": "",
-  "appSecret": "",
-  "buildPath": "D:\\myprojects\\cocos-creater\\TestProject1\\build",
-  "debug": false,
-  "dest": "D:\\myprojects\\cocos-creater\\TestProject1\\build\\web-mobile",
-  "encryptJs": true,
-  "excludeScenes": [],
-  "excludedModules": [],
-  "includeAnySDK": false,
-  "includeEruda": false,
-  "includeSDKBox": false,
-  "inlineSpriteFrames": true,
-  "inlineSpriteFrames_native": true,
-  "jailbreakPlatform": false,
-  "md5Cache": true,
-  "mergeStartScene": false,
-  "oauthLoginServer": "",
-  "optimizeHotUpdate": false,
-  "orientation": {
-    "landscapeLeft": true,
-    "landscapeRight": true,
-    "portrait": false,
-    "upsideDown": false
-  },
-  "packageName": "org.cocos2d.TestProject1",
-  "platform": "web-mobile",
-  "previewHeight": "720",
-  "previewWidth": "1280",
-  "privateKey": "",
-  "renderMode": "0",
-  "scenes": [
-    "6207e6ac-9290-40f5-a0d7-d2b131fb567e"
-  ],
-  "sourceMaps": false,
-  "startScene": "6207e6ac-9290-40f5-a0d7-d2b131fb567e",
-  "template": "link",
-  "title": "TestProject1",
-  "useDebugKeystore": true,
-  "vsVersion": "auto",
-  "webOrientation": "auto",
-  "wechatgame": {
-    "appid": "wx6ac3f5090a6b99c5",
-    "orientation": "portrait"
-  },
-  "xxteaKey": "2bdcc510-dfb8-40",
-  "zipCompressJs": true,
-  "project": "D:\\myprojects\\cocos-creater\\TestProject1",
-  "projectName": "TestProject1",
-  "debugBuildWorker": false
-}
-2018-03-23T10:35:02.912Z - normal: Building D:\myprojects\cocos-creater\TestProject1
-2018-03-23T10:35:02.912Z - normal: Destination D:\myprojects\cocos-creater\TestProject1\build\web-mobile
-2018-03-23T10:35:02.913Z - normal: Delete D:\myprojects\cocos-creater\TestProject1\build\web-mobile\**\*
-2018-03-23T10:35:04.845Z - normal: Compiled project javascript file successfully
-2018-03-23T10:35:04.846Z - normal: Start building assets
-2018-03-23T10:35:04.846Z - normal: Start spawn build-worker
-2018-03-23T10:35:05.616Z - normal: Finish spawn build-worker
-2018-03-23T10:35:05.616Z - normal: Start init build-worker
-2018-03-23T10:35:07.609Z - normal: 1.8.2
-2018-03-23T10:35:07.688Z - normal: Finish init build-worker
-2018-03-23T10:35:07.688Z - normal: Start build-assets in worker
-2018-03-23T10:35:07.953Z - normal: Finish build-assets in worker
-2018-03-23T10:35:07.960Z - normal: Finish building assets
-2018-03-23T10:35:07.974Z - normal: Start building raw assets
-2018-03-23T10:35:07.975Z - normal: Start building plugin scripts
-2018-03-23T10:35:08.000Z - normal: Finish building raw assets
-2018-03-23T10:35:08.042Z - normal: Generating main.js from D:\CocosCreator\resources\static\build-templates\shares\main.js
-2018-03-23T10:35:08.048Z - normal: Generating html from D:\CocosCreator\resources\static\build-templates\web-mobile\template\index.html
-2018-03-23T10:35:08.281Z - normal: Built to "D:\myprojects\cocos-creater\TestProject1\build\web-mobile" successfully
+2018-03-26T02:07:11.547Z - normal: Check project D:\myprojects\cocos-creater\TestProject1
+2018-03-26T02:07:11.549Z - normal: Initializing Cocos2d
+2018-03-26T02:07:12.162Z - normal: Initializing Asset Database
+2018-03-26T02:07:12.214Z - success: protocol uuid registerred
+2018-03-26T02:07:12.214Z - success: protocol db registerred
+2018-03-26T02:07:12.214Z - success: protocol thumbnail registerred
+2018-03-26T02:07:12.214Z - normal: Loading editor/builtin packages
+2018-03-26T02:07:12.262Z - success: anysdk loaded
+2018-03-26T02:07:12.444Z - success: assets loaded
+2018-03-26T02:07:12.447Z - success: builder loaded
+2018-03-26T02:07:12.451Z - success: cocos-analytics loaded
+2018-03-26T02:07:12.454Z - success: console loaded
+2018-03-26T02:07:12.458Z - success: hierarchy loaded
+2018-03-26T02:07:12.460Z - success: inspector loaded
+2018-03-26T02:07:12.465Z - success: keystore loaded
+2018-03-26T02:07:12.469Z - success: node-library loaded
+2018-03-26T02:07:12.470Z - success: package-asset loaded
+2018-03-26T02:07:12.472Z - success: preferences loaded
+2018-03-26T02:07:12.473Z - success: project-exporter loaded
+2018-03-26T02:07:12.491Z - success: project-importer loaded
+2018-03-26T02:07:12.493Z - success: project-settings loaded
+2018-03-26T02:07:12.494Z - success: ui-kit loaded
+2018-03-26T02:07:12.505Z - success: ui-grid loaded
+2018-03-26T02:07:12.510Z - success: scene loaded
+2018-03-26T02:07:12.511Z - success: sprite-editor loaded
+2018-03-26T02:07:12.515Z - success: store loaded
+2018-03-26T02:07:12.520Z - success: timeline loaded
+2018-03-26T02:07:12.521Z - normal: Loading builtin packages
+2018-03-26T02:07:12.533Z - success: asset-db-debugger loaded
+2018-03-26T02:07:12.534Z - success: code-editor loaded
+2018-03-26T02:07:12.540Z - success: color-picker loaded
+2018-03-26T02:07:12.542Z - success: package-manager loaded
+2018-03-26T02:07:12.546Z - success: sdkbox loaded
+2018-03-26T02:07:12.550Z - success: tester loaded
+2018-03-26T02:07:12.551Z - success: ui-kit-preview-extra loaded
+2018-03-26T02:07:12.552Z - success: ui-kit-preview loaded
+2018-03-26T02:07:12.554Z - success: ui-tree loaded
+2018-03-26T02:07:13.864Z - normal: Initializing project D:\myprojects\cocos-creater\TestProject1
+2018-03-26T02:07:13.888Z - normal: Loading packages
+2018-03-26T02:07:13.892Z - normal: Watching packages
+2018-03-26T02:07:13.914Z - normal: Run Application
+2018-03-26T02:07:14.904Z - success: preview server running at http://localhost:7456
+2018-03-26T02:07:19.519Z - normal: 1.8.2

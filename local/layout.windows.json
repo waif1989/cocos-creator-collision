@@ -47,7 +47,7 @@
                     ],
                     "height": 585,
                     "type": "panel",
-                    "width": 910.96875
+                    "width": 871
                   },
                   {
                     "active": 0,
@@ -56,12 +56,12 @@
                     ],
                     "height": 585,
                     "type": "panel",
-                    "width": 245
+                    "width": 234
                   }
                 ],
                 "height": 585,
                 "type": "dock-h",
-                "width": 1158.984375
+                "width": 1108
               },
               {
                 "active": 0,
@@ -71,12 +71,12 @@
                 ],
                 "height": 341,
                 "type": "panel",
-                "width": 1158.984375
+                "width": 1108
               }
             ],
             "height": 929,
             "type": "dock-v",
-            "width": 1158.984375
+            "width": 1108
           },
           {
             "active": 0,
@@ -85,7 +85,7 @@
             ],
             "height": 929,
             "type": "panel",
-            "width": 438
+            "width": 489
           }
         ],
         "type": "dock-h"
@@ -99,8 +99,7 @@
         "scene",
         "timeline"
       ]
-    },
-    "window-1521801284731": {}
+    }
   },
   "panels": {
     "package-asset.import": {
