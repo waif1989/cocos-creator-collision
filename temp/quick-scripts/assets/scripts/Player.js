@@ -47,7 +47,7 @@ cc.Class({
 
 		// 初始化键盘输入监听
 		// this.setInputControl();
-		this.setInputTouchControl();
+		// this.setInputTouchControl();
 	},
 
 	setJumpAction: function setJumpAction() {

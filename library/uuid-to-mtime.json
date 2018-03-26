@@ -245,8 +245,8 @@
     "relativePath": "mikado_outline_shadow.fnt"
   },
   "6207e6ac-9290-40f5-a0d7-d2b131fb567e": {
-    "asset": 1522030504510,
-    "meta": 1522030504534,
+    "asset": 1522052271197,
+    "meta": 1522052271222,
     "relativePath": "game.fire"
   },
   "5a8b42e5-66c0-482b-ba1c-be4ad410be3f": {
@@ -263,11 +263,6 @@
     "asset": 1521802991041,
     "meta": 1521803151539,
     "relativePath": "scripts\\ground.js"
-  },
-  "eee595d5-6fe9-496b-892c-e76bdbde09aa": {
-    "asset": 1521802991033,
-    "meta": 1521803151585,
-    "relativePath": "scripts\\Player.js"
   },
   "21f524ba-d466-4120-bf38-b9a24f5b2d3b": {
     "asset": 1521802991037,
@@ -325,28 +320,38 @@
     "relativePath": "textures\\btn_play2.png"
   },
   "c624833d-7769-47c4-96e3-5059d844321b": {
-    "asset": 1522030481526,
-    "meta": 1522030481559,
+    "asset": 1522059564882,
+    "meta": 1522059564898,
     "relativePath": "textures\\btn_play2.prefab"
-  },
-  "d34e7abf-8a37-490f-aa95-cfff22cb508d": {
-    "asset": 1522032037911,
-    "meta": 1522032041861,
-    "relativePath": "scripts\\Play_Btn.js"
-  },
-  "3ab0840a-6950-4f58-b714-1787fe357ca5": {
-    "asset": 1522032492313,
-    "meta": 1522032639751,
-    "relativePath": "scripts\\Game.js"
-  },
-  "e693fdf3-2c12-45bf-8969-ed10c23222d8": {
-    "asset": 1522032365635,
-    "meta": 1522032639753,
-    "relativePath": "scripts\\Play_Again_Btn.js"
   },
   "c1e82559-a480-4750-abf8-6595c6a977d9": {
     "asset": 1522032677571,
     "meta": 1522032677585,
     "relativePath": "textures\\score.prefab"
+  },
+  "b24f0f15-3386-464e-8599-c2b7b1572c72": {
+    "asset": 1522054480720,
+    "meta": 1522054480739,
+    "relativePath": "textures\\chineseScore.prefab"
+  },
+  "d34e7abf-8a37-490f-aa95-cfff22cb508d": {
+    "asset": 1522059681261,
+    "meta": 1522059682635,
+    "relativePath": "scripts\\Play_Btn.js"
+  },
+  "e693fdf3-2c12-45bf-8969-ed10c23222d8": {
+    "asset": 1522060105044,
+    "meta": 1522060106711,
+    "relativePath": "scripts\\Play_Again_Btn.js"
+  },
+  "eee595d5-6fe9-496b-892c-e76bdbde09aa": {
+    "asset": 1522060296940,
+    "meta": 1522060298041,
+    "relativePath": "scripts\\Player.js"
+  },
+  "3ab0840a-6950-4f58-b714-1787fe357ca5": {
+    "asset": 1522060772547,
+    "meta": 1522060773641,
+    "relativePath": "scripts\\Game.js"
   }
 }

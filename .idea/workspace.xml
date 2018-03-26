@@ -3,34 +3,28 @@
   <component name="ChangeListManager">
     <list default="true" id="c0d60b25-4e7d-4c55-8bff-508137ab7bc5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/imports/3a/3ab0840a-6950-4f58-b714-1787fe357ca5.js.map" afterPath="$PROJECT_DIR$/library/imports/3a/3ab0840a-6950-4f58-b714-1787fe357ca5.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/preferred-vcs.xml" afterPath="$PROJECT_DIR$/.idea/preferred-vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/game.fire" afterPath="$PROJECT_DIR$/assets/game.fire" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/game.fire.meta" afterPath="$PROJECT_DIR$/assets/game.fire.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/mikado_outline_shadow.fnt.meta" afterPath="$PROJECT_DIR$/assets/mikado_outline_shadow.fnt.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/mikado_outline_shadow.png.meta" afterPath="$PROJECT_DIR$/assets/mikado_outline_shadow.png.meta" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scripts/Game.js" afterPath="$PROJECT_DIR$/assets/scripts/Game.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scripts/Game.js.meta" afterPath="$PROJECT_DIR$/assets/scripts/Game.js.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scripts/Play_Again_Btn.js.meta" afterPath="$PROJECT_DIR$/assets/scripts/Play_Again_Btn.js.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scripts/Player.js.meta" afterPath="$PROJECT_DIR$/assets/scripts/Player.js.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scripts/Star.js.meta" afterPath="$PROJECT_DIR$/assets/scripts/Star.js.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scripts/ground.js.meta" afterPath="$PROJECT_DIR$/assets/scripts/ground.js.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/textures/PurpleMonster.png.meta" afterPath="$PROJECT_DIR$/assets/textures/PurpleMonster.png.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/textures/background.jpg.meta" afterPath="$PROJECT_DIR$/assets/textures/background.jpg.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/textures/btn_play.png.meta" afterPath="$PROJECT_DIR$/assets/textures/btn_play.png.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/textures/btn_play_again.png.meta" afterPath="$PROJECT_DIR$/assets/textures/btn_play_again.png.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/textures/btn_play_again.prefab.meta" afterPath="$PROJECT_DIR$/assets/textures/btn_play_again.prefab.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/textures/ground.png.meta" afterPath="$PROJECT_DIR$/assets/textures/ground.png.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/textures/star.png.meta" afterPath="$PROJECT_DIR$/assets/textures/star.png.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/textures/star.prefab.meta" afterPath="$PROJECT_DIR$/assets/textures/star.prefab.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scripts/Play_Again_Btn.js" afterPath="$PROJECT_DIR$/assets/scripts/Play_Again_Btn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scripts/Play_Btn.js" afterPath="$PROJECT_DIR$/assets/scripts/Play_Btn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scripts/Player.js" afterPath="$PROJECT_DIR$/assets/scripts/Player.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/textures/btn_play2.prefab" afterPath="$PROJECT_DIR$/assets/textures/btn_play2.prefab" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/imports/3a/3ab0840a-6950-4f58-b714-1787fe357ca5.js" afterPath="$PROJECT_DIR$/library/imports/3a/3ab0840a-6950-4f58-b714-1787fe357ca5.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/imports/62/6207e6ac-9290-40f5-a0d7-d2b131fb567e.json" afterPath="$PROJECT_DIR$/library/imports/62/6207e6ac-9290-40f5-a0d7-d2b131fb567e.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/imports/e6/e693fdf3-2c12-45bf-8969-ed10c23222d8.js" afterPath="$PROJECT_DIR$/library/imports/e6/e693fdf3-2c12-45bf-8969-ed10c23222d8.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/imports/e6/e693fdf3-2c12-45bf-8969-ed10c23222d8.js.map" afterPath="$PROJECT_DIR$/library/imports/e6/e693fdf3-2c12-45bf-8969-ed10c23222d8.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/imports/ee/eee595d5-6fe9-496b-892c-e76bdbde09aa.js" afterPath="$PROJECT_DIR$/library/imports/ee/eee595d5-6fe9-496b-892c-e76bdbde09aa.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/imports/ee/eee595d5-6fe9-496b-892c-e76bdbde09aa.js.map" afterPath="$PROJECT_DIR$/library/imports/ee/eee595d5-6fe9-496b-892c-e76bdbde09aa.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/uuid-to-mtime.json" afterPath="$PROJECT_DIR$/library/uuid-to-mtime.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local/assets.json" afterPath="$PROJECT_DIR$/local/assets.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local/layout.windows.json" afterPath="$PROJECT_DIR$/local/layout.windows.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local/logs/project.log" afterPath="$PROJECT_DIR$/local/logs/project.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings/project.json" afterPath="$PROJECT_DIR$/settings/project.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp/BackupAssets/assets/game.fire" afterPath="$PROJECT_DIR$/temp/BackupAssets/assets/game.fire" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/Game.js" afterPath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/Game.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/Game.js.map" afterPath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/Game.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/Play_Again_Btn.js" afterPath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/Play_Again_Btn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/Play_Again_Btn.js.map" afterPath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/Play_Again_Btn.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/Player.js" afterPath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/Player.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/Player.js.map" afterPath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/Player.js.map" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -48,11 +42,11 @@
       <file leaf-file-name="Player.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/scripts/Player.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="46" column="23" lean-forward="false" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+            <state relative-caret-position="114">
+              <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <element signature="e#1777#2363#0" expanded="false" />
+                <element signature="e#1780#2366#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -85,8 +79,8 @@
       <file leaf-file-name="Game.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/scripts/Game.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="988">
-              <caret line="58" column="24" lean-forward="false" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
+            <state relative-caret-position="494">
+              <caret line="119" column="166" lean-forward="false" selection-start-line="119" selection-start-column="165" selection-end-line="119" selection-end-column="166" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -97,8 +91,8 @@
       <file leaf-file-name="Play_Btn.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/scripts/Play_Btn.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="532">
+              <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="32" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -109,8 +103,8 @@
       <file leaf-file-name="Play_Again_Btn.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/scripts/Play_Again_Btn.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="19" column="48" lean-forward="false" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+            <state relative-caret-position="481">
+              <caret line="28" column="38" lean-forward="true" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -126,7 +120,6 @@
       <find>jumpAction</find>
       <find>setInputControl</find>
       <find>director</find>
-      <find>gainScore</find>
       <find>jumpDuration</find>
       <find>game</find>
       <find>setJumpAction</find>
@@ -136,9 +129,13 @@
       <find>spawnNewStar</find>
       <find>star</find>
       <find>player</find>
-      <find>scoreDisplay</find>
       <find>playAgainBtnPrefab</find>
+      <find>gainScore</find>
+      <find>scoreDisplay</find>
+      <find>isPlayAgain</find>
       <find>startPlay</find>
+      <find>score</find>
+      <find>setInputTouchControl</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -148,10 +145,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/assets/scripts/Star.js" />
-        <option value="$PROJECT_DIR$/assets/scripts/Player.js" />
         <option value="$PROJECT_DIR$/assets/scripts/ground.js" />
         <option value="$PROJECT_DIR$/assets/scripts/Play_Btn.js" />
         <option value="$PROJECT_DIR$/assets/scripts/Play_Again_Btn.js" />
+        <option value="$PROJECT_DIR$/assets/scripts/Player.js" />
         <option value="$PROJECT_DIR$/assets/scripts/Game.js" />
       </list>
     </option>
@@ -252,12 +249,12 @@
       <workItem from="1521619811074" duration="7233000" />
       <workItem from="1521700175862" duration="19709000" />
       <workItem from="1521768709379" duration="14013000" />
-      <workItem from="1522030102659" duration="3272000" />
+      <workItem from="1522030102659" duration="8991000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44227000" />
+    <option name="totallyTimeSpent" value="49946000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -304,7 +301,7 @@
           <caret line="46" column="23" lean-forward="false" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#1777#2363#0" expanded="false" />
+            <element signature="e#1780#2366#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -355,7 +352,7 @@
           <caret line="60" column="17" lean-forward="true" selection-start-line="55" selection-start-column="8" selection-end-line="60" selection-end-column="17" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#1777#2363#0" expanded="false" />
+            <element signature="e#1780#2366#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -386,7 +383,7 @@
           <caret line="42" column="13" lean-forward="true" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#1777#2363#0" expanded="false" />
+            <element signature="e#1780#2366#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -426,17 +423,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scripts/Player.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="46" column="23" lean-forward="false" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#1777#2363#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/scripts/ground.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -457,30 +443,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scripts/Play_Btn.js">
+    <entry file="file://$PROJECT_DIR$/assets/scripts/Play_Again_Btn.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="481">
+          <caret line="28" column="38" lean-forward="true" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scripts/Play_Again_Btn.js">
+    <entry file="file://$PROJECT_DIR$/assets/scripts/Play_Btn.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="19" column="48" lean-forward="false" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+        <state relative-caret-position="532">
+          <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="32" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scripts/Player.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#1780#2366#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/scripts/Game.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="988">
-          <caret line="58" column="24" lean-forward="false" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
+        <state relative-caret-position="494">
+          <caret line="119" column="166" lean-forward="false" selection-start-line="119" selection-start-column="165" selection-end-line="119" selection-end-column="166" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

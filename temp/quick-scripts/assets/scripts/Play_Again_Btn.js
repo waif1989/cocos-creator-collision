@@ -2,7 +2,7 @@
 cc._RF.push(module, 'e693f3zLBJFv4lp7RDCMiLY', 'Play_Again_Btn', __filename);
 // scripts/Play_Again_Btn.js
 
-'use strict';
+"use strict";
 
 // Learn cc.Class:
 //  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/class.html
@@ -15,41 +15,33 @@ cc._RF.push(module, 'e693f3zLBJFv4lp7RDCMiLY', 'Play_Again_Btn', __filename);
 //  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
 
 cc.Class({
-    extends: cc.Component,
+				extends: cc.Component,
 
-    properties: {
-        // foo: {
-        //     // ATTRIBUTES:
-        //     default: null,        // The default value will be used only when the component attaching
-        //                           // to a node for the first time
-        //     type: cc.SpriteFrame, // optional, default is typeof default
-        //     serializable: true,   // optional, default is true
-        // },
-        // bar: {
-        //     get () {
-        //         return this._bar;
-        //     },
-        //     set (value) {
-        //         this._bar = value;
-        //     }
-        // },
-    },
+				properties: {
+								// 暂存 Game 对象的引用
+								game: {
+												default: null,
+												serializable: false
+								}
+				},
 
-    onLoad: function onLoad() {
-        this.touchControl();
-    },
+				onLoad: function onLoad() {
+								this.touchControl();
+				},
 
-    touchControl: function touchControl() {
-        this.node.on(cc.Node.EventType.TOUCH_START, function (event) {
-            cc.director.loadScene('game');
-        }, this);
-    },
+				touchControl: function touchControl() {
+								this.node.on(cc.Node.EventType.TOUCH_START, function (event) {
+												// cc.director.loadScene('game');
+												this.game.startGameFunc();
+												this.node.destroy();
+								}, this);
+				},
 
-    // LIFE-CYCLE CALLBACKS:
+				// LIFE-CYCLE CALLBACKS:
 
-    // onLoad () {},
+				// onLoad () {},
 
-    start: function start() {}
+				start: function start() {}
 }
 
 // update (dt) {},

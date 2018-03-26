@@ -25,8 +25,7 @@ cc.Class({
 	
 	touchControl: function () {
 		this.node.on(cc.Node.EventType.TOUCH_START, function (event) {
-			this.game.spawnNewStar();
-			this.game.startPlayFunc();
+			this.game.startGameFunc();
 			this.node.destroy();
 		}, this);
 	},

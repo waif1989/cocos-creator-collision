@@ -10,7 +10,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "btn_play2",
+    "_name": "chineseScore",
     "_objFlags": 0,
     "_parent": null,
     "_children": [],
@@ -19,13 +19,10 @@
     "_components": [
       {
         "__id__": 2
-      },
-      {
-        "__id__": 3
       }
     ],
     "_prefab": {
-      "__id__": 4
+      "__id__": 3
     },
     "_id": "",
     "_opacity": 255,
@@ -44,8 +41,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 195,
-      "height": 57
+      "width": 223.46,
+      "height": 40
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -53,8 +50,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 483,
-      "y": 438
+      "x": 0,
+      "y": 190
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -64,39 +61,26 @@
     "groupIndex": 0
   },
   {
-    "__type__": "cc.Sprite",
+    "__type__": "cc.Label",
     "_name": "",
     "_objFlags": 0,
     "node": {
       "__id__": 1
     },
     "_enabled": true,
-    "_spriteFrame": {
-      "__uuid__": "f716f8b0-426a-4768-9b8e-e039c9ccb3d8"
-    },
-    "_type": 0,
-    "_sizeMode": 1,
-    "_fillType": 0,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": true,
-    "_srcBlendFactor": 770,
-    "_dstBlendFactor": 771,
-    "_atlas": null
-  },
-  {
-    "__type__": "d34e7q/ijdJD6qVz/8iy1CN",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 1
-    },
-    "_enabled": true
+    "_useOriginalSize": false,
+    "_actualFontSize": 40,
+    "_fontSize": 40,
+    "_lineHeight": 40,
+    "_enableWrapText": true,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
+    "_spacingX": 0,
+    "_N$string": "你的得分：0",
+    "_N$horizontalAlign": 1,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Microsoft YaHei",
+    "_N$overflow": 0
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -104,9 +88,9 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "c624833d-7769-47c4-96e3-5059d844321b"
+      "__uuid__": "b24f0f15-3386-464e-8599-c2b7b1572c72"
     },
-    "fileId": "dcGKDHdB1DPqAWfHm5DWp1",
+    "fileId": "60TQBBJg5EAZ46SZMHG0Kg",
     "sync": false
   }
 ]

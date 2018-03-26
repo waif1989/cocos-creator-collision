@@ -13,7 +13,6 @@ cc.Class({
 
     properties: {
     	startPlay: false,
-	    isPlayAgain: false,
 	    round: true,
 	    leftOrRight: -1,
 	    gameOver: false,
@@ -22,6 +21,11 @@ cc.Class({
 	    minStarDuration: 0,
 	    // score label 的引用
 	    scoreDisplay: {
+		    default: null,
+		    type: cc.Label
+	    },
+	    // 这个属性引用了分数文字
+	    chineseScore: {
 		    default: null,
 		    type: cc.Label
 	    },
@@ -53,7 +57,6 @@ cc.Class({
     },
 	
 	onLoad: function () {
-    	console.log('isPlayAgain-----', this.isPlayAgain);
 		var manager = cc.director.getCollisionManager();
 		manager.enabled = true;
 		this.initFunc();
@@ -72,9 +75,21 @@ cc.Class({
 		this.touchControl();
 	},
 	
+	startGameFunc: function () {
+    	this.startPlay = false;
+    	this.gameOver = false;
+    	this.round = true;
+		this.score = 0;
+		this.chineseScore.string = '你的得分：0';
+		this.chineseScore.node.setPosition(cc.p(0, 190));
+		this.spawnNewStar();
+		this.startPlayFunc();
+	},
+	
 	newPlayAgainBtn: function () {
 		var newBtn = cc.instantiate(this.playAgainBtnPrefab);
 		this.node.addChild(newBtn);
+		newBtn.getComponent('Play_Again_Btn').game = this;
 		newBtn.setPosition(cc.p(0, 30));
 	},
 	
@@ -82,7 +97,7 @@ cc.Class({
 		var newBtn = cc.instantiate(this.playBtnPrefab);
 		this.node.addChild(newBtn);
 		newBtn.getComponent('Play_Btn').game = this;
-		newBtn.setPosition(cc.p(0, 30));
+		newBtn.setPosition(cc.p(0, 60));
 	},
 	
 	spawnNewStar: function() {
@@ -102,7 +117,7 @@ cc.Class({
 		// var bezierTo = cc.cardinalSplineTo(1.5, [cc.p(-this.node.width / 2, this.node.height / 5), cc.p(-this.node.width / 4, this.node.height / 3), cc.p(0, this.groundY)], 0);
 		
 		var actionAll = cc.spawn(
-			cc.cardinalSplineTo(this.newRandomFunc(1.5, 1.8), [cc.p(this.leftOrRight * this.node.width / 2, this.newRandomFunc(this.groundY + 30, this.node.height / 3)), cc.p(this.leftOrRight * this.node.width / 4, this.node.height / 3), cc.p(this.newRandomFunc(0, -this.leftOrRight * this.node.width / 4), this.groundY)], 0),
+			cc.cardinalSplineTo(this.newRandomFunc(1.5, 1.8), [cc.p(this.leftOrRight * this.node.width / 2, this.newRandomFunc(this.groundY + 30, this.node.height / 4)), cc.p(this.leftOrRight * this.node.width / 4, this.node.height / 3), cc.p(this.newRandomFunc(0, -this.leftOrRight * this.node.width / 3), this.groundY)], 0),
 			cc.rotateBy(2, 720),
 		);
 		newStar.getComponent('Star').node.runAction(actionAll);
@@ -142,8 +157,10 @@ cc.Class({
 	},
 	
 	gameOverShow: function () {
-		var temp = this.scoreDisplay.string;
-		this.scoreDisplay.string = 'GAME OVER \n' + 'YOUR SCORE IS:' + this.score.toString();
+		/*var temp = this.scoreDisplay.string;
+		this.scoreDisplay.string = 'GAME OVER \n' + 'YOUR SCORE IS:' + this.score.toString();*/
+		var temp = this.chineseScore.string;
+		this.chineseScore.string = '游戏结束 \n' + '你的最高分是：' + this.score.toString();
 		this.newPlayAgainBtn();
 	},
 	
@@ -165,7 +182,8 @@ cc.Class({
 	gainScore: function () {
 		this.score += 1;
 		// 更新 scoreDisplay Label 的文字
-		this.scoreDisplay.string = 'Score: ' + this.score.toString();
+		// this.scoreDisplay.string = 'Score: ' + this.score.toString();
+		this.chineseScore.string = '你的得分：' + this.score.toString();
 	}
 
     /*update: function (dt) {

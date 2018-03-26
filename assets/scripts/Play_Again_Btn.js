@@ -12,21 +12,11 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        // foo: {
-        //     // ATTRIBUTES:
-        //     default: null,        // The default value will be used only when the component attaching
-        //                           // to a node for the first time
-        //     type: cc.SpriteFrame, // optional, default is typeof default
-        //     serializable: true,   // optional, default is true
-        // },
-        // bar: {
-        //     get () {
-        //         return this._bar;
-        //     },
-        //     set (value) {
-        //         this._bar = value;
-        //     }
-        // },
+	    // 暂存 Game 对象的引用
+	    game: {
+		    default: null,
+		    serializable: false
+	    }
     },
 	
 	onLoad: function () {
@@ -35,7 +25,9 @@ cc.Class({
 	
 	touchControl: function () {
 		this.node.on(cc.Node.EventType.TOUCH_START, function (event) {
-			cc.director.loadScene('game');
+			// cc.director.loadScene('game');
+			this.game.startGameFunc();
+			this.node.destroy();
 		}, this);
 	},
 
