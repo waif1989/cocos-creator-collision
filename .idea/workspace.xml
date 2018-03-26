@@ -6,25 +6,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/game.fire" afterPath="$PROJECT_DIR$/assets/game.fire" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scripts/Game.js" afterPath="$PROJECT_DIR$/assets/scripts/Game.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scripts/Play_Again_Btn.js" afterPath="$PROJECT_DIR$/assets/scripts/Play_Again_Btn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scripts/Play_Btn.js" afterPath="$PROJECT_DIR$/assets/scripts/Play_Btn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scripts/Player.js" afterPath="$PROJECT_DIR$/assets/scripts/Player.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/textures/btn_play2.prefab" afterPath="$PROJECT_DIR$/assets/textures/btn_play2.prefab" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/imports/3a/3ab0840a-6950-4f58-b714-1787fe357ca5.js" afterPath="$PROJECT_DIR$/library/imports/3a/3ab0840a-6950-4f58-b714-1787fe357ca5.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/imports/62/6207e6ac-9290-40f5-a0d7-d2b131fb567e.json" afterPath="$PROJECT_DIR$/library/imports/62/6207e6ac-9290-40f5-a0d7-d2b131fb567e.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/imports/e6/e693fdf3-2c12-45bf-8969-ed10c23222d8.js" afterPath="$PROJECT_DIR$/library/imports/e6/e693fdf3-2c12-45bf-8969-ed10c23222d8.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/imports/e6/e693fdf3-2c12-45bf-8969-ed10c23222d8.js.map" afterPath="$PROJECT_DIR$/library/imports/e6/e693fdf3-2c12-45bf-8969-ed10c23222d8.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/imports/ee/eee595d5-6fe9-496b-892c-e76bdbde09aa.js" afterPath="$PROJECT_DIR$/library/imports/ee/eee595d5-6fe9-496b-892c-e76bdbde09aa.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/imports/ee/eee595d5-6fe9-496b-892c-e76bdbde09aa.js.map" afterPath="$PROJECT_DIR$/library/imports/ee/eee595d5-6fe9-496b-892c-e76bdbde09aa.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/uuid-to-mtime.json" afterPath="$PROJECT_DIR$/library/uuid-to-mtime.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local/layout.windows.json" afterPath="$PROJECT_DIR$/local/layout.windows.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp/BackupAssets/assets/game.fire" afterPath="$PROJECT_DIR$/temp/BackupAssets/assets/game.fire" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/Game.js" afterPath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/Game.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/Game.js.map" afterPath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/Game.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/Play_Again_Btn.js" afterPath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/Play_Again_Btn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/Play_Again_Btn.js.map" afterPath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/Play_Again_Btn.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/Player.js" afterPath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/Player.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/Player.js.map" afterPath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/Player.js.map" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -43,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/assets/scripts/Player.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="114">
-              <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+              <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#1780#2366#0" expanded="false" />
@@ -55,8 +42,8 @@
       <file leaf-file-name="Star.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/scripts/Star.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="57" column="44" lean-forward="false" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="44" />
+            <state relative-caret-position="640">
+              <caret line="70" column="6" lean-forward="false" selection-start-line="42" selection-start-column="4" selection-end-line="70" selection-end-column="6" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -67,8 +54,8 @@
       <file leaf-file-name="ground.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/scripts/ground.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="22" column="9" lean-forward="false" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+            <state relative-caret-position="140">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -79,8 +66,8 @@
       <file leaf-file-name="Game.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/scripts/Game.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="119" column="166" lean-forward="false" selection-start-line="119" selection-start-column="165" selection-end-line="119" selection-end-column="166" />
+            <state relative-caret-position="270">
+              <caret line="80" column="26" lean-forward="true" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -92,7 +79,7 @@
         <entry file="file://$PROJECT_DIR$/assets/scripts/Play_Btn.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="532">
-              <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="32" />
+              <caret line="28" column="32" lean-forward="false" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="32" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -104,7 +91,7 @@
         <entry file="file://$PROJECT_DIR$/assets/scripts/Play_Again_Btn.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="481">
-              <caret line="28" column="38" lean-forward="true" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+              <caret line="28" column="38" lean-forward="false" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -134,8 +121,11 @@
       <find>scoreDisplay</find>
       <find>isPlayAgain</find>
       <find>startPlay</find>
-      <find>score</find>
       <find>setInputTouchControl</find>
+      <find>score</find>
+      <find>starPrefab</find>
+      <find>chineseScore</find>
+      <find>gameOverShow</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -149,6 +139,7 @@
         <option value="$PROJECT_DIR$/assets/scripts/Play_Btn.js" />
         <option value="$PROJECT_DIR$/assets/scripts/Play_Again_Btn.js" />
         <option value="$PROJECT_DIR$/assets/scripts/Player.js" />
+        <option value="$PROJECT_DIR$/assets/scripts/Football.js" />
         <option value="$PROJECT_DIR$/assets/scripts/Game.js" />
       </list>
     </option>
@@ -249,12 +240,12 @@
       <workItem from="1521619811074" duration="7233000" />
       <workItem from="1521700175862" duration="19709000" />
       <workItem from="1521768709379" duration="14013000" />
-      <workItem from="1522030102659" duration="8991000" />
+      <workItem from="1522030102659" duration="12402000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49946000" />
+    <option name="totallyTimeSpent" value="53357000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -423,30 +414,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scripts/ground.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="22" column="9" lean-forward="false" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/scripts/Star.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="57" column="44" lean-forward="false" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="44" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/scripts/Play_Again_Btn.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="481">
-          <caret line="28" column="38" lean-forward="true" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+          <caret line="28" column="38" lean-forward="false" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -456,7 +427,7 @@
     <entry file="file://$PROJECT_DIR$/assets/scripts/Play_Btn.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
-          <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="32" />
+          <caret line="28" column="32" lean-forward="false" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="32" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -466,7 +437,7 @@
     <entry file="file://$PROJECT_DIR$/assets/scripts/Player.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
-          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#1780#2366#0" expanded="false" />
@@ -474,10 +445,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scripts/Star.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="70" column="6" lean-forward="false" selection-start-line="42" selection-start-column="4" selection-end-line="70" selection-end-column="6" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scripts/Football.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="871">
+          <caret line="53" column="39" lean-forward="false" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/scripts/ground.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/scripts/Game.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="119" column="166" lean-forward="false" selection-start-line="119" selection-start-column="165" selection-end-line="119" selection-end-column="166" />
+        <state relative-caret-position="270">
+          <caret line="80" column="26" lean-forward="true" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

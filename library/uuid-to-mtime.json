@@ -245,8 +245,8 @@
     "relativePath": "mikado_outline_shadow.fnt"
   },
   "6207e6ac-9290-40f5-a0d7-d2b131fb567e": {
-    "asset": 1522052271197,
-    "meta": 1522052271222,
+    "asset": 1522065359688,
+    "meta": 1522065359711,
     "relativePath": "game.fire"
   },
   "5a8b42e5-66c0-482b-ba1c-be4ad410be3f": {
@@ -349,9 +349,34 @@
     "meta": 1522060298041,
     "relativePath": "scripts\\Player.js"
   },
+  "a85b0184-4ff0-463d-8d9a-9c54b2b825c6": {
+    "asset": 1522061507745,
+    "meta": 1522061726496,
+    "relativePath": "textures\\football.png"
+  },
+  "85ad9489-48a3-4a69-b0e6-60477b5c084a": {
+    "asset": 1522061686516,
+    "meta": 1522061726511,
+    "relativePath": "textures\\man.png"
+  },
+  "cde9648a-a055-4bc0-9da1-a7046b114fa6": {
+    "asset": 1522063773081,
+    "meta": 1522063773106,
+    "relativePath": "textures\\football.prefab"
+  },
+  "743f8eb4-1034-48c8-80d2-cab9a20f04e8": {
+    "asset": 1522063608689,
+    "meta": 1522063608706,
+    "relativePath": "textures\\PurpleMonster.prefab"
+  },
+  "cbe1964a-0604-4ddb-8eb1-67a8023302d7": {
+    "asset": 1522064474618,
+    "meta": 1522064489137,
+    "relativePath": "textures\\bg.jpg"
+  },
   "3ab0840a-6950-4f58-b714-1787fe357ca5": {
-    "asset": 1522060772547,
-    "meta": 1522060773641,
+    "asset": 1522065338855,
+    "meta": 1522065358099,
     "relativePath": "scripts\\Game.js"
   }
 }
