@@ -99,7 +99,8 @@
         "scene",
         "timeline"
       ]
-    }
+    },
+    "window-1522149796138": {}
   },
   "panels": {
     "package-asset.import": {
@@ -121,8 +122,8 @@
       "height": 538
     },
     "builder": {
-      "x": 644,
-      "y": 143,
+      "x": 542,
+      "y": 160,
       "width": 516,
       "height": 738
     }

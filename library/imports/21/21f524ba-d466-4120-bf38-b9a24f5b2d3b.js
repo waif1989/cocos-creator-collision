@@ -18,14 +18,18 @@ cc.Class({
 	extends: cc.Component,
 
 	properties: {
-		testNum: 1,
-		// 星星和主角之间的距离小于这个数值时，就会完成收集
-		pickRadius: 0,
 		// 暂存 Game 对象的引用
 		game: {
 			default: null,
 			serializable: false
-		}
+		},
+		// 跳跃音效资源
+		jumpAudio: {
+			default: null,
+			url: cc.AudioClip
+		},
+		// 星星和主角之间的距离小于这个数值时，就会完成收集
+		pickRadius: 0
 	},
 
 	getPlayerDistance: function getPlayerDistance() {
@@ -37,13 +41,15 @@ cc.Class({
 	},
 
 	onPicked: function onPicked() {
-
 		// 调用 Game 脚本的得分方法
 		this.game.gainScore();
-		/*// 当星星被收集时，调用 Game 脚本中的接口，生成一个新的星星
-  this.game.spawnNewStar();
-  // 然后销毁当前星星节点
-  this.node.destroy();*/
+	},
+
+	newRandomFunc: function newRandomFunc(Min, Max) {
+		var Range = Max - Min;
+		var Rand = Math.random();
+		var num = Min + Math.floor(Rand * Range); // 舍去
+		return num;
 	},
 
 	onCollisionEnter: function onCollisionEnter() {
@@ -65,11 +71,13 @@ cc.Class({
 					}
 				}, 700);
 			}, this);
-			var actionAll = cc.spawn(cc.moveTo(2, cc.p(-this.game.leftOrRight * 750, 750)), cc.rotateBy(2, 720), finished);
+			var t = cc.random0To1() > 0.5 ? -1 : 1;
+			var r = this.newRandomFunc(1, 2);
+			var actionAll = cc.spawn(cc.moveTo(this.newRandomFunc(1.8, 2.1), cc.p(t * 750 * r, 750 * r)), cc.rotateBy(2, 720), finished);
 			this.node.runAction(actionAll.easing(cc.easeOut(3.0)));
 			this.onPicked();
 		}
-		console.log('on collision enter');
+		console.log('Star collision');
 	},
 
 	/*update: function (dt) {

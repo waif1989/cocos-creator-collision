@@ -18,12 +18,12 @@ cc.Class({
 				extends: cc.Component,
 
 				properties: {
-								// 暂存 Game 对象的引用
-								game: {
+								star: {
 												default: null,
 												serializable: false
 								},
-								star: {
+								// 暂存 Game 对象的引用
+								game: {
 												default: null,
 												serializable: false
 								}

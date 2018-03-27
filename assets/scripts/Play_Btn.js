@@ -23,9 +23,13 @@ cc.Class({
 		this.touchControl();
 	},
 	
+	startGameFunc: function () {
+		this.game.startGameFunc();
+	},
+	
 	touchControl: function () {
 		this.node.on(cc.Node.EventType.TOUCH_START, function (event) {
-			this.game.startGameFunc();
+			this.startGameFunc();
 			this.node.destroy();
 		}, this);
 	},

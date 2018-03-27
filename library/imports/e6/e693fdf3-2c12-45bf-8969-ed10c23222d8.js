@@ -29,10 +29,14 @@ cc.Class({
 								this.touchControl();
 				},
 
+				restartGameFunc: function restartGameFunc() {
+								this.game.startGameFunc();
+				},
+
 				touchControl: function touchControl() {
 								this.node.on(cc.Node.EventType.TOUCH_START, function (event) {
 												// cc.director.loadScene('game');
-												this.game.startGameFunc();
+												this.restartGameFunc();
 												this.node.destroy();
 								}, this);
 				},

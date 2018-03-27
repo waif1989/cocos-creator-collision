@@ -245,12 +245,12 @@
     "relativePath": "mikado_outline_shadow.fnt"
   },
   "6207e6ac-9290-40f5-a0d7-d2b131fb567e": {
-    "asset": 1522065359688,
-    "meta": 1522065359711,
+    "asset": 1522149792494,
+    "meta": 1522149792518,
     "relativePath": "game.fire"
   },
   "5a8b42e5-66c0-482b-ba1c-be4ad410be3f": {
-    "asset": 1521802991042,
+    "asset": 1522117466593,
     "meta": 1521802991018,
     "relativePath": "scripts"
   },
@@ -260,17 +260,12 @@
     "relativePath": "mikado_outline_shadow.png"
   },
   "2d2f6967-68ac-41f5-92f9-f202f27f5ace": {
-    "asset": 1521802991041,
-    "meta": 1521803151539,
+    "asset": 1522114246717,
+    "meta": 1522117485808,
     "relativePath": "scripts\\ground.js"
   },
-  "21f524ba-d466-4120-bf38-b9a24f5b2d3b": {
-    "asset": 1521802991037,
-    "meta": 1521803151590,
-    "relativePath": "scripts\\Star.js"
-  },
   "d6ff10bc-4d58-4d63-8af4-19151a90da2c": {
-    "asset": 1521802991086,
+    "asset": 1522065227613,
     "meta": 1521802991045,
     "relativePath": "textures"
   },
@@ -320,8 +315,8 @@
     "relativePath": "textures\\btn_play2.png"
   },
   "c624833d-7769-47c4-96e3-5059d844321b": {
-    "asset": 1522059564882,
-    "meta": 1522059564898,
+    "asset": 1522143882911,
+    "meta": 1522143882940,
     "relativePath": "textures\\btn_play2.prefab"
   },
   "c1e82559-a480-4750-abf8-6595c6a977d9": {
@@ -334,20 +329,10 @@
     "meta": 1522054480739,
     "relativePath": "textures\\chineseScore.prefab"
   },
-  "d34e7abf-8a37-490f-aa95-cfff22cb508d": {
-    "asset": 1522059681261,
-    "meta": 1522059682635,
-    "relativePath": "scripts\\Play_Btn.js"
-  },
   "e693fdf3-2c12-45bf-8969-ed10c23222d8": {
-    "asset": 1522060105044,
-    "meta": 1522060106711,
+    "asset": 1522117466449,
+    "meta": 1522117485844,
     "relativePath": "scripts\\Play_Again_Btn.js"
-  },
-  "eee595d5-6fe9-496b-892c-e76bdbde09aa": {
-    "asset": 1522060296940,
-    "meta": 1522060298041,
-    "relativePath": "scripts\\Player.js"
   },
   "a85b0184-4ff0-463d-8d9a-9c54b2b825c6": {
     "asset": 1522061507745,
@@ -374,9 +359,34 @@
     "meta": 1522064489137,
     "relativePath": "textures\\bg.jpg"
   },
+  "d34e7abf-8a37-490f-aa95-cfff22cb508d": {
+    "asset": 1522117570909,
+    "meta": 1522118029816,
+    "relativePath": "scripts\\Play_Btn.js"
+  },
+  "eee595d5-6fe9-496b-892c-e76bdbde09aa": {
+    "asset": 1522119643884,
+    "meta": 1522119657422,
+    "relativePath": "scripts\\Player.js"
+  },
+  "40003e91-3894-4c7b-9201-d1247235943f": {
+    "asset": 1522132693597,
+    "meta": 1522132745873,
+    "relativePath": "scripts\\axios.min.js"
+  },
+  "cdd4a384-e517-4ed4-91b7-6b34141607dd": {
+    "asset": 1522135778095,
+    "meta": 1522135822081,
+    "relativePath": "scripts\\jsonp.js"
+  },
   "3ab0840a-6950-4f58-b714-1787fe357ca5": {
-    "asset": 1522065338855,
-    "meta": 1522065358099,
+    "asset": 1522149375461,
+    "meta": 1522149376152,
     "relativePath": "scripts\\Game.js"
+  },
+  "21f524ba-d466-4120-bf38-b9a24f5b2d3b": {
+    "asset": 1522149426149,
+    "meta": 1522149427756,
+    "relativePath": "scripts\\Star.js"
   }
 }

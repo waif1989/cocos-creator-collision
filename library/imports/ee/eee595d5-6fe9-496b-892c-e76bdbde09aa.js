@@ -18,12 +18,18 @@ cc.Class({
 	extends: cc.Component,
 
 	properties: {
-		jumpAble: true,
 		// 暂存 Game 对象的引用
 		game: {
 			default: null,
 			serializable: false
 		},
+		// 跳跃音效资源
+		jumpAudio: {
+			default: null,
+			url: cc.AudioClip
+		},
+		// 是否可以起跳
+		jumpAble: true,
 		// 主角跳跃高度
 		jumpHeight: 0,
 		// 主角跳跃持续时间
@@ -35,23 +41,19 @@ cc.Class({
 	},
 
 	onLoad: function onLoad() {
-		// 初始化跳跃动作
-		/*this.jumpAction = this.setJumpAction();
-  this.node.runAction(this.jumpAction);*/
-
 		// 加速度方向开关
 		this.accLeft = false;
 		this.accRight = false;
 		// 主角当前水平方向速度
 		this.xSpeed = 0;
+	},
 
-		// 初始化键盘输入监听
-		// this.setInputControl();
-		// this.setInputTouchControl();
+	playJumpSound: function playJumpSound() {
+		// 调用声音引擎播放声音
+		cc.audioEngine.playEffect(this.jumpAudio, false);
 	},
 
 	setJumpAction: function setJumpAction() {
-		var self = this;
 		this.jumpAble = false;
 		// 跳跃上升
 		var jumpUp = cc.moveBy(this.jumpDuration, cc.p(0, this.jumpHeight)).easing(cc.easeCubicActionOut());
@@ -61,6 +63,7 @@ cc.Class({
 		// return cc.repeatForever(cc.sequence(jumpUp, jumpDown));
 		var finished = cc.callFunc(function () {
 			this.jumpAble = true;
+			this.playJumpSound();
 			if (!this.game.round) {
 				this.game.round = true;
 			}
