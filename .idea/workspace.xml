@@ -2,53 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0d60b25-4e7d-4c55-8bff-508137ab7bc5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/scripts/axios.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/scripts/jsonp.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web-mobile/main.48117.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web-mobile/res/import/0e/0eac40aa5.6cd4b.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web-mobile/res/raw-assets/mikado_outline_shadow.c1880.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web-mobile/res/raw-assets/textures/PurpleMonster.4b0bd.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web-mobile/res/raw-assets/textures/background.0c687.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web-mobile/res/raw-assets/textures/star.c0cb3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web-mobile/src/project.fc74e.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build/web-mobile/src/settings.df75a.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/imports/3a/3ab0840a-6950-4f58-b714-1787fe357ca5.js.map" afterPath="$PROJECT_DIR$/library/imports/3a/3ab0840a-6950-4f58-b714-1787fe357ca5.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/Game.js.map" afterPath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/Game.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/game.fire" afterPath="$PROJECT_DIR$/assets/game.fire" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scripts/Game.js" afterPath="$PROJECT_DIR$/assets/scripts/Game.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scripts/Play_Again_Btn.js" afterPath="$PROJECT_DIR$/assets/scripts/Play_Again_Btn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scripts/Play_Btn.js" afterPath="$PROJECT_DIR$/assets/scripts/Play_Btn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scripts/Player.js" afterPath="$PROJECT_DIR$/assets/scripts/Player.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scripts/Star.js" afterPath="$PROJECT_DIR$/assets/scripts/Star.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/scripts/ground.js" afterPath="$PROJECT_DIR$/assets/scripts/ground.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/textures/btn_play2.prefab" afterPath="$PROJECT_DIR$/assets/textures/btn_play2.prefab" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/web-mobile/index.html" afterPath="$PROJECT_DIR$/build/web-mobile/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/imports/21/21f524ba-d466-4120-bf38-b9a24f5b2d3b.js" afterPath="$PROJECT_DIR$/library/imports/21/21f524ba-d466-4120-bf38-b9a24f5b2d3b.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/imports/21/21f524ba-d466-4120-bf38-b9a24f5b2d3b.js.map" afterPath="$PROJECT_DIR$/library/imports/21/21f524ba-d466-4120-bf38-b9a24f5b2d3b.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/imports/2d/2d2f6967-68ac-41f5-92f9-f202f27f5ace.js" afterPath="$PROJECT_DIR$/library/imports/2d/2d2f6967-68ac-41f5-92f9-f202f27f5ace.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/imports/2d/2d2f6967-68ac-41f5-92f9-f202f27f5ace.js.map" afterPath="$PROJECT_DIR$/library/imports/2d/2d2f6967-68ac-41f5-92f9-f202f27f5ace.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/imports/3a/3ab0840a-6950-4f58-b714-1787fe357ca5.js" afterPath="$PROJECT_DIR$/library/imports/3a/3ab0840a-6950-4f58-b714-1787fe357ca5.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/imports/62/6207e6ac-9290-40f5-a0d7-d2b131fb567e.json" afterPath="$PROJECT_DIR$/library/imports/62/6207e6ac-9290-40f5-a0d7-d2b131fb567e.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/imports/e6/e693fdf3-2c12-45bf-8969-ed10c23222d8.js" afterPath="$PROJECT_DIR$/library/imports/e6/e693fdf3-2c12-45bf-8969-ed10c23222d8.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/imports/e6/e693fdf3-2c12-45bf-8969-ed10c23222d8.js.map" afterPath="$PROJECT_DIR$/library/imports/e6/e693fdf3-2c12-45bf-8969-ed10c23222d8.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/imports/ee/eee595d5-6fe9-496b-892c-e76bdbde09aa.js" afterPath="$PROJECT_DIR$/library/imports/ee/eee595d5-6fe9-496b-892c-e76bdbde09aa.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/imports/ee/eee595d5-6fe9-496b-892c-e76bdbde09aa.js.map" afterPath="$PROJECT_DIR$/library/imports/ee/eee595d5-6fe9-496b-892c-e76bdbde09aa.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/uuid-to-mtime.json" afterPath="$PROJECT_DIR$/library/uuid-to-mtime.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local/assets.json" afterPath="$PROJECT_DIR$/local/assets.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local/layout.windows.json" afterPath="$PROJECT_DIR$/local/layout.windows.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local/logs/project.log" afterPath="$PROJECT_DIR$/local/logs/project.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings/builder.json" afterPath="$PROJECT_DIR$/settings/builder.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp/BackupAssets/assets/game.fire" afterPath="$PROJECT_DIR$/temp/BackupAssets/assets/game.fire" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/Game.js" afterPath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/Game.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/Play_Again_Btn.js" afterPath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/Play_Again_Btn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/Play_Again_Btn.js.map" afterPath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/Play_Again_Btn.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/Player.js" afterPath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/Player.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/Player.js.map" afterPath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/Player.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/Star.js" afterPath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/Star.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/Star.js.map" afterPath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/Star.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/ground.js" afterPath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/ground.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/ground.js.map" afterPath="$PROJECT_DIR$/temp/quick-scripts/assets/scripts/ground.js.map" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -67,7 +22,7 @@
         <entry file="file://$PROJECT_DIR$/assets/scripts/Player.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="190">
-              <caret line="40" column="21" lean-forward="true" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+              <caret line="40" column="21" lean-forward="false" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#1811#2397#0" expanded="false" />
@@ -77,7 +32,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Star.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Star.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/scripts/Star.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="602">
@@ -86,6 +41,16 @@
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#2288#2445#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -171,8 +136,8 @@
       <find>chineseScore</find>
       <find>gameOverShow</find>
       <find>testNum</find>
-      <find>getPlayerDistance</find>
       <find>startGameFunc</find>
+      <find>getPlayerDistance</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -188,6 +153,7 @@
         <option value="$PROJECT_DIR$/assets/scripts/Player.js" />
         <option value="$PROJECT_DIR$/assets/scripts/Game.js" />
         <option value="$PROJECT_DIR$/assets/scripts/Star.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -293,12 +259,12 @@
       <workItem from="1521700175862" duration="19709000" />
       <workItem from="1521768709379" duration="14013000" />
       <workItem from="1522030102659" duration="12834000" />
-      <workItem from="1522113407013" duration="14042000" />
+      <workItem from="1522113407013" duration="14725000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67831000" />
+    <option name="totallyTimeSpent" value="68514000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -596,7 +562,7 @@
     <entry file="file://$PROJECT_DIR$/assets/scripts/Player.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
-          <caret line="40" column="21" lean-forward="true" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+          <caret line="40" column="21" lean-forward="false" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#1811#2397#0" expanded="false" />
@@ -638,6 +604,14 @@
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#2288#2445#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
