@@ -58,9 +58,6 @@ cc.Class({
 		var finished = cc.callFunc(function() {
 			this.jumpAble = true;
 			this.playJumpSound();
-			if (!this.game.round) {
-				this.game.round = true;
-			}
 		}, this);
 		return cc.sequence(jumpUp, jumpDown, finished);
 	},
