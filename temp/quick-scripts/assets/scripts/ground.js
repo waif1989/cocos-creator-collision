@@ -2,7 +2,7 @@
 cc._RF.push(module, '2d2f6lnaKxB9ZL58gLyf1rO', 'ground', __filename);
 // scripts/ground.js
 
-'use strict';
+"use strict";
 
 // Learn cc.Class:
 //  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/class.html
@@ -30,7 +30,7 @@ cc.Class({
 				},
 
 				onCollisionEnter: function onCollisionEnter() {
-								console.log('ground enter');
+								// console.log('ground enter');
 								this.game.gameOver = true;
 								this.game.player.jumpAble = false;
 								this.game.gameOverShow();

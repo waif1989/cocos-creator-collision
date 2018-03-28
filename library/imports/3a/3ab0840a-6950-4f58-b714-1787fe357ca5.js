@@ -98,7 +98,6 @@ cc.Class({
 		this.score = 0;
 		this.chineseScore.string = '你的得分：0';
 		this.player.getComponent('Player').node.opacity = 255;
-		// this.chineseScore.node.setPosition(cc.p(0, 260));
 		this.chineseScore.node.opacity = 255;
 		this.spawnNewStar();
 		this.startPlayFunc();
@@ -108,7 +107,6 @@ cc.Class({
 		var newBtn = cc.instantiate(this.playAgainBtnPrefab);
 		this.node.addChild(newBtn);
 		newBtn.getComponent('Play_Again_Btn').game = this;
-		// newBtn.setPosition(cc.p(100, 85));
 		newBtn.setPosition(cc.p(0, 0));
 	},
 
@@ -124,19 +122,16 @@ cc.Class({
 		var newStar = cc.instantiate(this.starPrefab);
 		// 将新增的节点添加到 Canvas 节点下面
 		this.node.addChild(newStar);
-		// 为星星设置一个随机位置
-		newStar.setPosition(this.getNewStarPosition());
 		newStar.getComponent('Star').game = this;
 		this.ground.getComponent('ground').star = newStar.getComponent('Star');
-
+		// 为星星设置一个随机位置
+		newStar.setPosition(this.getNewStarPosition());
+		this.newStarRunActionFunc(newStar);
 		/*var actionAll = cc.spawn(
   	cc.moveTo(4, cc.p(this.node.width / 2, this.node.height / 2))
   );
   var action = cc.moveTo(4, cc.p(this.node.width / 2, this.node.height / 2));
   var bezierTo = cc.cardinalSplineTo(1.5, [cc.p(-this.node.width / 2, this.node.height / 5), cc.p(-this.node.width / 4, this.node.height / 3), cc.p(0, this.groundY)], 0);*/
-
-		var actionAll = cc.spawn(cc.cardinalSplineTo(this.newRandomFunc(1.2, 1.5), [cc.p(this.leftOrRight * this.node.width / 2, this.newRandomFunc(this.groundY + 30, this.node.height / 4)), cc.p(this.leftOrRight * this.node.width / 4, this.node.height / 3), cc.p(this.newRandomFunc(0, -this.leftOrRight * this.node.width / 4), this.groundY)], 0), cc.rotateBy(2, 720));
-		newStar.getComponent('Star').node.runAction(actionAll);
 	},
 
 	getNewStarPosition: function getNewStarPosition() {
@@ -151,18 +146,39 @@ cc.Class({
   return cc.p(0, this.groundY + this.player.getComponent('Player').jumpHeight);*/
 		if (cc.random0To1() > 0.5) {
 			this.leftOrRight = 1;
-			return cc.p(this.node.width / 2, this.node.height / 2);
+			// return cc.p(this.node.width / 2, this.node.height / 2);
+			return cc.p(480, 320);
 		} else {
 			this.leftOrRight = -1;
-			return cc.p(-this.node.width / 2, this.node.height / 2);
+			// return cc.p(-this.node.width / 2, this.node.height / 2);
+			return cc.p(-480, -320);
 		}
 	},
 
+	newStarRunActionFunc: function newStarRunActionFunc(star) {
+		/*var actionAll = cc.spawn(
+  	cc.cardinalSplineTo(this.newRandomFunc(1.2, 1.5), [cc.p(this.leftOrRight * this.node.width / 2, this.newRandomFunc(this.groundY + 30, this.node.height / 4)), cc.p(this.leftOrRight * this.node.width / 4, this.node.height / 3), cc.p(this.newRandomFunc(0, -this.leftOrRight * this.node.width / 4), this.groundY)], 0),
+  	cc.rotateBy(2, 720),
+  );*/
+		// 球的直径是225*0.25,半径约等于30
+		var y0 = this.newRandomFunc(this.groundY + 30, 90);
+		var y1 = this.newRandomFunc(190, 200);
+		var y2 = this.groundY + 20;
+
+		var x0 = this.leftOrRight * 480;
+		var x1 = 0;
+		var x2 = -1 * this.leftOrRight * 480;
+
+		/*var actionAll = cc.spawn(
+  	cc.cardinalSplineTo(this.newRandomFunc(1.2, 1.5), [cc.p(this.leftOrRight * 480, y0), cc.p(this.leftOrRight * this.node.width / 4, y1), cc.p(this.newRandomFunc(0, -this.leftOrRight * this.node.width / 4), y2)], 0),
+  	cc.rotateBy(2, 720),
+  );*/
+		var actionAll = cc.spawn(cc.cardinalSplineTo(this.newRandomFunc(1.5, 1.8), [cc.p(x0, y0), cc.p(x1, y1), cc.p(x2, y2)], 0), cc.rotateBy(2, 720));
+		star.getComponent('Star').node.runAction(actionAll);
+	},
+
 	newRandomFunc: function newRandomFunc(Min, Max) {
-		var Range = Max - Min;
-		var Rand = Math.random();
-		var num = Min + Math.floor(Rand * Range); // 舍去
-		return num;
+		return Math.random() * (Max - Min) + Min;
 	},
 
 	startPlayFunc: function startPlayFunc() {

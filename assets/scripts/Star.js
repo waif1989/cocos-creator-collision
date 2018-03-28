@@ -46,6 +46,25 @@ cc.Class({
 		return num;
 	},
 	
+	actionFinishFunc: function () {
+		return cc.callFunc(function() {
+			var self = this;
+			setTimeout(function () {
+				// 当星星被收集时，调用 Game 脚本中的接口，生成一个新的星星
+				if (!self.game.ground.gameOver) {
+					self.game.spawnNewStar();
+					self.game.player.jumpAble = true;
+					self.game.round = true;
+					// 然后销毁当前星星节点
+					self.node.destroy();
+				} else {
+					self.game.player.jumpAble = false;
+					self.node.destroy();
+				}
+			}, 700);
+		}, this);
+	},
+	
 	onCollisionEnter: function () {
     	if (this.game.round) {
 		    this.game.round = false;
@@ -66,16 +85,16 @@ cc.Class({
 			    }, 700);
 		    }, this);
 		    var t = cc.random0To1() > 0.5 ? -1 : 1;
-		    var r = this.newRandomFunc(1, 2);
+		    // var r = this.newRandomFunc(1, 2);
 		    var actionAll = cc.spawn(
-			    cc.moveTo(this.newRandomFunc(1.8, 2.1), cc.p(t * 750 * r, 750 * r)),
+			    cc.moveTo(2, cc.p(t * 480, 480)),
 			    cc.rotateBy(2, 720),
 			    finished
 		    );
 		    this.node.runAction(actionAll.easing(cc.easeOut(3.0)));
 		    this.onPicked();
 	    }
-		console.log('Star collision')
+		// console.log('Star collision')
 	},
 	
 	/*update: function (dt) {
