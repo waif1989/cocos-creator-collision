@@ -340,8 +340,8 @@
     "relativePath": "textures\\man.png"
   },
   "cde9648a-a055-4bc0-9da1-a7046b114fa6": {
-    "asset": 1522063773081,
-    "meta": 1522063773106,
+    "asset": 1522222626012,
+    "meta": 1522222626026,
     "relativePath": "textures\\football.prefab"
   },
   "743f8eb4-1034-48c8-80d2-cab9a20f04e8": {
@@ -380,13 +380,13 @@
     "relativePath": "scripts\\ground.js"
   },
   "3ab0840a-6950-4f58-b714-1787fe357ca5": {
-    "asset": 1522219999959,
-    "meta": 1522220001066,
+    "asset": 1522224695826,
+    "meta": 1522224718878,
     "relativePath": "scripts\\Game.js"
   },
   "21f524ba-d466-4120-bf38-b9a24f5b2d3b": {
-    "asset": 1522221352133,
-    "meta": 1522221357563,
+    "asset": 1522224696369,
+    "meta": 1522224718881,
     "relativePath": "scripts\\Star.js"
   }
 }

@@ -12,6 +12,8 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
+    	// 碰撞状态
+	    checkCollision: true,
 	    // 暂存 Game 对象的引用
 	    game: {
 		    default: null,
@@ -39,62 +41,46 @@ cc.Class({
 		this.game.gainScore();
 	},
 	
+	flyAwayFunc: function () {
+		this.game.flyAwayFunc();
+	},
+	
 	newRandomFunc: function (Min, Max) {
-		var Range = Max - Min;
-		var Rand = Math.random();
-		var num = Min + Math.floor(Rand * Range); // 舍去
-		return num;
+		return Math.random() * (Max - Min) + Min;
 	},
 	
 	actionFinishFunc: function () {
+		var self = this;
 		return cc.callFunc(function() {
-			var self = this;
 			setTimeout(function () {
 				// 当星星被收集时，调用 Game 脚本中的接口，生成一个新的星星
-				if (!self.game.ground.gameOver) {
+				if (!self.game.gameOver) {
 					self.game.spawnNewStar();
 					self.game.player.jumpAble = true;
-					self.game.round = true;
 					// 然后销毁当前星星节点
 					self.node.destroy();
 				} else {
 					self.game.player.jumpAble = false;
 					self.node.destroy();
 				}
-			}, 700);
+			}, 2000);
 		}, this);
 	},
 	
 	onCollisionEnter: function () {
-    	if (this.game.round) {
-		    this.game.round = false;
-		    var finished = cc.callFunc(function() {
-		    	var self = this;
-		    	setTimeout(function () {
-				    // 当星星被收集时，调用 Game 脚本中的接口，生成一个新的星星
-				    if (!self.game.ground.gameOver) {
-					    self.game.spawnNewStar();
-					    self.game.player.jumpAble = true;
-					    self.game.round = true;
-					    // 然后销毁当前星星节点
-					    self.node.destroy();
-				    } else {
-					    self.game.player.jumpAble = false;
-					    self.node.destroy();
-				    }
-			    }, 700);
-		    }, this);
-		    var t = cc.random0To1() > 0.5 ? -1 : 1;
-		    // var r = this.newRandomFunc(1, 2);
+		console.log('Star collision', this.node.position);
+    	if (this.checkCollision) {
+		    this.checkCollision = false;
+		    this.flyAwayFunc();
+		    /*var t = cc.random0To1() > 0.5 ? -1 : 1;
 		    var actionAll = cc.spawn(
-			    cc.moveTo(2, cc.p(t * 480, 480)),
+			    cc.moveTo(2, cc.p(0, 0)),
 			    cc.rotateBy(2, 720),
-			    finished
+			    this.actionFinishFunc()
 		    );
-		    this.node.runAction(actionAll.easing(cc.easeOut(3.0)));
+		    this.node.runAction(actionAll.easing(cc.easeIn(0.5)));*/
 		    this.onPicked();
 	    }
-		// console.log('Star collision')
 	},
 	
 	/*update: function (dt) {

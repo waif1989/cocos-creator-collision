@@ -86,11 +86,6 @@ cc.Class({
 		this.touchControl();
 	},
 
-	playScoreSound: function playScoreSound() {
-		// 调用声音引擎播放声音
-		cc.audioEngine.playEffect(this.scoreAudio, false);
-	},
-
 	startGameFunc: function startGameFunc() {
 		this.startPlay = false;
 		this.gameOver = false;
@@ -101,6 +96,13 @@ cc.Class({
 		this.chineseScore.node.opacity = 255;
 		this.spawnNewStar();
 		this.startPlayFunc();
+	},
+
+	flyAwayFunc: function flyAwayFunc() {},
+
+	playScoreSound: function playScoreSound() {
+		// 调用声音引擎播放声音
+		cc.audioEngine.playEffect(this.scoreAudio, false);
 	},
 
 	newPlayAgainBtn: function newPlayAgainBtn() {
@@ -125,7 +127,8 @@ cc.Class({
 		newStar.getComponent('Star').game = this;
 		this.ground.getComponent('ground').star = newStar.getComponent('Star');
 		// 为星星设置一个随机位置
-		newStar.setPosition(this.getNewStarPosition());
+		// newStar.setPosition(this.getNewStarPosition());
+		cc.random0To1() > 0.5 ? this.leftOrRight = 1 : this.leftOrRight = -1;
 		this.newStarRunActionFunc(newStar);
 		/*var actionAll = cc.spawn(
   	cc.moveTo(4, cc.p(this.node.width / 2, this.node.height / 2))
@@ -147,11 +150,11 @@ cc.Class({
 		if (cc.random0To1() > 0.5) {
 			this.leftOrRight = 1;
 			// return cc.p(this.node.width / 2, this.node.height / 2);
-			return cc.p(480, 320);
+			// return cc.p(480, 320);
 		} else {
 			this.leftOrRight = -1;
 			// return cc.p(-this.node.width / 2, this.node.height / 2);
-			return cc.p(-480, -320);
+			// return cc.p(-480, -320);
 		}
 	},
 
@@ -161,7 +164,8 @@ cc.Class({
   	cc.rotateBy(2, 720),
   );*/
 		// 球的直径是225*0.25,半径约等于30
-		var y0 = this.newRandomFunc(this.groundY + 30, 90);
+		// var y0 = this.newRandomFunc(this.groundY + 30, 90);
+		var y0 = 90;
 		var y1 = this.newRandomFunc(190, 200);
 		var y2 = this.groundY + 20;
 
