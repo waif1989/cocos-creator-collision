@@ -13,8 +13,8 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
+        serveInterval: 700, // 发球间隔时间
     	startPlay: false, // 是否开始游戏
-	    round: true, // 球发出后的当前回合
 	    leftOrRight: -1, // 1是左边，-1是右边
 	    gameOver: false, // 游戏是否结束
 	    // 星星产生后消失时间的随机范围
@@ -81,6 +81,7 @@ cc.Class({
 	},
 	
 	startGameFunc: function () {
+    	var self = this;
     	this.startPlay = false;
     	this.gameOver = false;
     	this.round = true;
@@ -88,13 +89,19 @@ cc.Class({
 		this.chineseScore.string = '你的得分：0';
 		this.player.getComponent('Player').node.opacity = 255;
 		this.chineseScore.node.opacity = 255;
+        this.serveInterval = 700;
+        setInterval(function () {
+            self.reduceTimeFunc()
+        }, 2000);
 		this.spawnNewStar();
 		this.startPlayFunc();
 	},
-	
-	flyAwayFunc: function () {
-	
-	},
+
+    reduceTimeFunc: function () {
+    	if (this.serveInterval > 300) {
+            this.serveInterval = this.serveInterval - 100;
+		}
+    },
 	
 	playScoreSound: function () {
 		// 调用声音引擎播放声音
@@ -162,7 +169,7 @@ cc.Class({
 		// 球的直径是225*0.25,半径约等于30
 		// var y0 = this.newRandomFunc(this.groundY + 30, 90);
 		var y0 = 90;
-		var y1 = this.newRandomFunc(190, 200);
+		var y1 = this.newRandomFunc(180, 190);
 		var y2 = this.groundY + 20;
 		
 		var x0 = this.leftOrRight * 480;
@@ -177,6 +184,7 @@ cc.Class({
 			cc.cardinalSplineTo(this.newRandomFunc(1.5, 1.8), [cc.p(x0, y0), cc.p(x1, y1), cc.p(x2, y2)], 0),
 			cc.rotateBy(2, 720),
 		);
+        star.getComponent('Star').nowAction = actionAll;
 		star.getComponent('Star').node.runAction(actionAll);
 	},
 	
