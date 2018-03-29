@@ -38,6 +38,7 @@ cc.Class({
 	onLoad: function () {
 		this.socket = io('http://10.254.102.203:8080');
 		var player = this.getQueryStringFunc('player');
+		console.log('player', player)
 		this.testSocketFunc();
 		this.setInputTouchControl(player);
 		// 加速度方向开关
@@ -105,7 +106,7 @@ cc.Class({
 		if (this.jumpAble && !this.game.gameOver) {
 			this.node.runAction(this.setJumpAction());
 			this.socket.send({
-				player: '0',
+				player: '1',
 				jump: true
 			});
 		}
@@ -116,7 +117,7 @@ cc.Class({
 			/*if (this.game.startPlay) {
 				this.playerJump();
 			}*/
-			if (this.game.startPlay && player === '0') {
+			if (this.game.startPlay && player === '1') {
 				this.playerJump();
 			}
 		}, this);

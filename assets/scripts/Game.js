@@ -59,6 +59,11 @@ cc.Class({
 	    player: {
 		    default: null,
 		    type: cc.Node
+	    },
+	    // 对手节点
+	    player2: {
+		    default: null,
+		    type: cc.Node
 	    }
     },
 	
@@ -75,9 +80,10 @@ cc.Class({
 		// 获取地平面的 y 轴坐标
 		this.groundY = this.ground.y + this.ground.height / 2;
 		this.player.getComponent('Player').game = this;
+		this.player2.getComponent('Player2').game = this;
 		this.ground.getComponent('ground').game = this;
 		this.newPlayBtn();
-		this.touchControl();
+		// this.touchControl(); // TODO
 	},
 	
 	startGameFunc: function () {
@@ -90,10 +96,11 @@ cc.Class({
 		this.player.getComponent('Player').node.opacity = 255;
 		this.chineseScore.node.opacity = 255;
         this.serveInterval = 700;
-        setInterval(function () {
+        // TODO
+        /*setInterval(function () {
             self.reduceTimeFunc()
         }, 2000);
-		this.spawnNewStar();
+		this.spawnNewStar();*/
 		this.startPlayFunc();
 	},
 
