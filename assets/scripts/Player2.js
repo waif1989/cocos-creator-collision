@@ -170,7 +170,7 @@ cc.Class({
 		
 		var y0 = 0;
 		var y1 = 250;
-		var y2 = -110;
+		var y2 = this.game.groundY;
 		
 		var x0 = -250;
 		var x1 = 0;

@@ -74,6 +74,7 @@ cc.Class({
 		return cc.callFunc(function () {
 			setTimeout(function () {
 				self.checkCollision = true;
+				self.game.player.jumpAble = true;
 			}, 500);
 		}, this);
 	},
@@ -86,7 +87,8 @@ cc.Class({
 		if (this.checkCollision) {
 			this.checkCollision = false;
 			this.onPicked();
-			this.node.stopAction(this.nowAction);
+			// this.node.stopAction(this.nowAction);
+			this.node.stopAllActions();
 			/*var actionAll = cc.spawn(
 				cc.moveTo(3, cc.p(this.game.leftOrRight * 750, 200)),
 				cc.rotateBy(3, 720),
@@ -94,7 +96,7 @@ cc.Class({
 			);
 			this.node.runAction(actionAll.easing(cc.easeOut(3.0)));*/
 			var actionAll = cc.spawn(
-				cc.cardinalSplineTo(cbActionAll.time, [cc.p(cbActionAll.xArr[0], cbActionAll.yArr[0]), cc.p(cbActionAll.xArr[1], cbActionAll.yArr[1]), cc.p(cbActionAll.xArr[2], cbActionAll.yArr[2])], 0),
+				cc.cardinalSplineTo(2, [cc.p(cbActionAll.xArr[0], cbActionAll.yArr[0]), cc.p(cbActionAll.xArr[1], cbActionAll.yArr[1]), cc.p(cbActionAll.xArr[2], cbActionAll.yArr[2])], 0),
 				cc.rotateBy(2, 720),
 				this.actionFinishFunc()
 			);

@@ -16,6 +16,7 @@ cc.Class({
 	    socket: null,
 	    playBtn: null,
 	    star: null,
+	    groundY: 0,
 	    entryDirect: -1, // 球初始进入方向
         serveInterval: 700, // 发球间隔时间
     	startPlay: false, // 是否开始游戏
@@ -239,7 +240,7 @@ cc.Class({
 		// var y0 = this.newRandomFunc(this.groundY + 30, 90);
 		var y0 = 90;
 		var y1 = this.newRandomFunc(180, 190);
-		var y2 = -110;
+		var y2 = this.groundY;
 		
 		var x0 = this.entryDirect * 480;
 		var x1 = 0;

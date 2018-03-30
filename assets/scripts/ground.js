@@ -24,7 +24,7 @@ cc.Class({
     },
 	
 	onCollisionEnter: function () {
-		// console.log('ground enter');
+		console.log('ground enter');
 		this.game.gameOver = true;
 		this.game.player.jumpAble = false;
 		this.game.gameOverShow();
