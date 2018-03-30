@@ -124,9 +124,17 @@ cc.Class({
 	},
 	
 	testSocketFunc: function () {
+		var self = this;
 		
-		this.socket.on('connect', function () {
+		/*this.socket.on('connect', function () {
 			console.log('connect---');
+		});*/
+		
+		this.socket.on('message', function (msg) {
+			// console.log('msg1---', msg);
+			if (msg.player === '1') {
+				self.playerJump();
+			}
 		});
 		
 		/*socket.on('greeting', function (msg) {

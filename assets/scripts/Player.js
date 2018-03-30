@@ -123,9 +123,17 @@ cc.Class({
 	},
 	
 	testSocketFunc: function () {
+		var self = this;
 		
-		this.socket.on('connect', function () {
+		/*this.socket.on('connect', function () {
 			console.log('connect---');
+		});*/
+		
+		this.socket.on('message', function (msg) {
+			// console.log('msg0---', msg);
+			if (msg.player === '0') {
+				self.playerJump();
+			}
 		});
 		
 		/*socket.on('greeting', function (msg) {
@@ -133,9 +141,7 @@ cc.Class({
 			socket.send('hi');
 		});*/
 		
-		/*socket.on('message', function (msg) {
-			console.log('msg---', msg)
-		});*/
+		
 	},
 	
 	/*update: function (dt) {
