@@ -27,10 +27,14 @@ cc.Class({
 		this.game.startGameFunc();
 	},
 	
+	destroyFunc: function () {
+		this.node.destroy();
+	},
+	
 	touchControl: function () {
 		this.node.on(cc.Node.EventType.TOUCH_START, function (event) {
 			this.startGameFunc();
-			this.node.destroy();
+			// this.destroyFunc();
 		}, this);
 	},
 

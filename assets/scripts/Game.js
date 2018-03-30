@@ -13,9 +13,13 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
+	    socket: null,
+	    playBtn: null,
+	    star: null,
+	    entryDirect: -1, // 球初始进入方向
         serveInterval: 700, // 发球间隔时间
     	startPlay: false, // 是否开始游戏
-	    leftOrRight: -1, // 1是左边，-1是右边
+	    leftOrRight: 0, // 1是左边，-1是右边
 	    gameOver: false, // 游戏是否结束
 	    // 星星产生后消失时间的随机范围
 	    maxStarDuration: 0,
@@ -68,9 +72,57 @@ cc.Class({
     },
 	
 	onLoad: function () {
-		this.testAxiosFunc();
-		this.testJsonpFunc();
+		// this.testAxiosFunc(); // TODO 保留
+		// this.testJsonpFunc(); // TODO 保留
 		this.initFunc();
+	},
+	
+	getQueryStringFunc: function (name) {
+		var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+		var r = window.location.search.substr(1).match(reg);
+		if (r != null) return unescape(r[2]); return null;
+	},
+	
+	noticeFunc: function () {
+		this.socket.send({
+			player: this.getQueryStringFunc('player'),
+			start: true
+		});
+	},
+	
+	connectWebSocketFunc: function () {
+    	var self = this;
+		var playerId = this.getQueryStringFunc('player');
+		this.socket = io('http://10.254.102.203:8080');
+		this.socket.on('connect', function () {
+			self.socket.send({
+				player: playerId,
+				join: true
+			});
+		});
+		this.socket.on('message', function (msg) {
+			if (msg.player === '0' && msg.jump) {
+				self.player.getComponent('Player').playerJump();
+			} else if (msg.player === '1' && msg.jump) {
+				self.player2.getComponent('Player2').playerJump();
+			}
+			if (msg.start) {
+				self.playBtn.destroyFunc();
+				self.startPlayFunc();
+				self.chineseScore.string = '你的得分：0';
+				self.chineseScore.node.opacity = 255;
+				self.serveInterval = 700;
+				self.spawnNewStar();
+			}
+			if (msg.actionAll && msg.player === '0') {
+				var actionAll = cc.spawn(
+					cc.cardinalSplineTo(msg.actionAll.time, [cc.p(msg.actionAll.xArr[0], msg.actionAll.yArr[0]), cc.p(msg.actionAll.xArr[1], msg.actionAll.yArr[1]), cc.p(msg.actionAll.xArr[2], msg.actionAll.yArr[2])], 0),
+					cc.rotateBy(2, 720),
+				);
+				self.star.getComponent('Star').nowAction = actionAll;
+				self.star.node.runAction(actionAll);
+			}
+		});
 	},
 	
 	initFunc: function () {
@@ -82,7 +134,9 @@ cc.Class({
 		this.player.getComponent('Player').game = this;
 		this.player2.getComponent('Player2').game = this;
 		this.ground.getComponent('ground').game = this;
+		
 		this.newPlayBtn();
+		this.connectWebSocketFunc();
 		// this.touchControl(); // TODO
 	},
 	
@@ -93,14 +147,15 @@ cc.Class({
     	this.round = true;
 		this.score = 0;
 		this.chineseScore.string = '你的得分：0';
-		this.player.getComponent('Player').node.opacity = 255;
+		// this.player.getComponent('Player').node.opacity = 255; // TODO
 		this.chineseScore.node.opacity = 255;
         this.serveInterval = 700;
         // TODO
         /*setInterval(function () {
             self.reduceTimeFunc()
-        }, 2000);
-		this.spawnNewStar();*/
+        }, 2000);*/
+		// this.spawnNewStar(); // TODO
+		this.noticeFunc();
 		this.startPlayFunc();
 	},
 
@@ -125,6 +180,7 @@ cc.Class({
 	newPlayBtn: function () {
 		var newBtn = cc.instantiate(this.playBtnPrefab);
 		this.node.addChild(newBtn);
+		this.playBtn = newBtn.getComponent('Play_Btn');
 		newBtn.getComponent('Play_Btn').game = this;
 		newBtn.setPosition(cc.p(0, 0));
 	},
@@ -136,9 +192,12 @@ cc.Class({
 		this.node.addChild(newStar);
 		newStar.getComponent('Star').game = this;
 		this.ground.getComponent('ground').star = newStar.getComponent('Star');
+		this.player.getComponent('Player').star = newStar.getComponent('Star');
+		this.player2.getComponent('Player2').star = newStar.getComponent('Star');
 		// 为星星设置一个随机位置
 		// newStar.setPosition(this.getNewStarPosition());
-		cc.random0To1() > 0.5 ? this.leftOrRight = 1 : this.leftOrRight = -1;
+		cc.random0To1() > 0.5 ? this.entryDirect = 1 : this.entryDirect = -1;
+		this.star =  newStar.getComponent('Star');
 		this.newStarRunActionFunc(newStar);
 		/*var actionAll = cc.spawn(
 			cc.moveTo(4, cc.p(this.node.width / 2, this.node.height / 2))
@@ -179,20 +238,30 @@ cc.Class({
 		var y1 = this.newRandomFunc(180, 190);
 		var y2 = this.groundY + 20;
 		
-		var x0 = this.leftOrRight * 480;
+		var x0 = this.entryDirect * 480;
 		var x1 = 0;
-		var x2 = -1 * this.leftOrRight * 480;
+		var x2 = -1 * this.entryDirect * 480;
+		
+		var time = this.newRandomFunc(1.5, 1.8);
 		
 		/*var actionAll = cc.spawn(
 			cc.cardinalSplineTo(this.newRandomFunc(1.2, 1.5), [cc.p(this.leftOrRight * 480, y0), cc.p(this.leftOrRight * this.node.width / 4, y1), cc.p(this.newRandomFunc(0, -this.leftOrRight * this.node.width / 4), y2)], 0),
 			cc.rotateBy(2, 720),
 		);*/
-		var actionAll = cc.spawn(
-			cc.cardinalSplineTo(this.newRandomFunc(1.5, 1.8), [cc.p(x0, y0), cc.p(x1, y1), cc.p(x2, y2)], 0),
+		/*var actionAll = cc.spawn(
+			cc.cardinalSplineTo(time, [cc.p(x0, y0), cc.p(x1, y1), cc.p(x2, y2)], 0),
 			cc.rotateBy(2, 720),
-		);
-        star.getComponent('Star').nowAction = actionAll;
-		star.getComponent('Star').node.runAction(actionAll);
+		);*/
+        // star.getComponent('Star').nowAction = actionAll;
+		this.socket.send({
+			player: this.getQueryStringFunc('player'),
+			actionAll: {
+				time: time,
+				xArr: [x0, x1, x2],
+				yArr: [y0, y1, y2]
+			}
+		});
+		// star.getComponent('Star').node.runAction(actionAll); // TODO
 	},
 	
 	newRandomFunc: function (Min, Max) {

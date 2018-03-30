@@ -18,6 +18,10 @@ cc.Class({
 		    default: null,
 		    serializable: false
 	    },
+	    star: {
+		    default: null,
+		    serializable: false
+	    },
 	    // 跳跃音效资源
 	    jumpAudio: {
 		    default: null,
@@ -36,9 +40,9 @@ cc.Class({
     },
 	
 	onLoad: function () {
-		this.socket = io('http://10.254.102.203:8080');
+		// this.socket = io('http://10.254.102.203:8080');
 		var player = this.getQueryStringFunc('player');
-		this.testSocketFunc();
+		// this.testSocketFunc(player);
 		this.setInputTouchControl(player);
 		// 加速度方向开关
 		this.accLeft = false;
@@ -104,7 +108,7 @@ cc.Class({
 	playerJump: function () {
 		if (this.jumpAble && !this.game.gameOver) {
 			this.node.runAction(this.setJumpAction());
-			this.socket.send({
+			this.game.socket.send({
 				player: '0',
 				jump: true
 			});
@@ -122,17 +126,34 @@ cc.Class({
 		}, this);
 	},
 	
-	testSocketFunc: function () {
+	areYouReady: function () {
+		this.socket.send({
+			player: '0',
+			ask: '1'
+		});
+	},
+	
+	testSocketFunc: function (player) {
 		var self = this;
 		
-		/*this.socket.on('connect', function () {
-			console.log('connect---');
-		});*/
+		this.socket.on('connect', function () {
+			if (player === '0') {
+				self.socket.send({
+					player: '0',
+					join: true
+				});
+			}
+		});
 		
 		this.socket.on('message', function (msg) {
-			// console.log('msg0---', msg);
-			if (msg.player === '0') {
+			if (msg.player === '0' && msg.jump) {
 				self.playerJump();
+			}
+			/*if (msg.join && msg.player === '0') {
+				self.node.opacity = 255;
+			}*/
+			if (msg.ask === '0' && msg.player === '1') {
+				self.node.opacity = 255;
 			}
 		});
 		
@@ -141,7 +162,12 @@ cc.Class({
 			socket.send('hi');
 		});*/
 		
-		
+	},
+	
+	onCollisionEnter: function () {
+		// console.log('player0-Collision');
+		this.game.leftOrRight = -1;
+		this.star.flyAwayFunc();
 	},
 	
 	/*update: function (dt) {

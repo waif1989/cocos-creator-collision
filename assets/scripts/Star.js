@@ -71,21 +71,26 @@ cc.Class({
         return Math.random() * (Max - Min) + Min;
     },
 	
-	onCollisionEnter: function () {
-		// console.log('Star collision', this.node.position);
-    	if (this.checkCollision) {
-		    this.checkCollision = false;
-		    var t = cc.random0To1() > 0.5 ? -1 : 1;
-            var actionAll = cc.spawn(
-                cc.moveTo(2, cc.p(t * 750, this.newRandomFunc(250, 500))),
-                cc.rotateBy(2, 720),
-                this.actionFinishFunc()
-            );
-            this.node.stopAction(this.nowAction);
-		    this.onPicked();
-            this.node.runAction(actionAll.easing(cc.easeOut(3.0)));
-	    }
+	flyAwayFunc: function () {
+		if (this.checkCollision) {
+			this.checkCollision = false;
+			// var t = cc.random0To1() > 0.5 ? -1 : 1;
+			// console.log('this.game.leftOrRight---', this.game.leftOrRight);
+			var actionAll = cc.spawn(
+				cc.moveTo(2, cc.p(this.game.leftOrRight * 750, this.newRandomFunc(250, 500))),
+				cc.rotateBy(2, 720),
+				this.actionFinishFunc()
+			);
+			this.node.stopAction(this.nowAction);
+			this.onPicked();
+			this.node.runAction(actionAll.easing(cc.easeOut(3.0)));
+		}
 	},
+	
+	/*onCollisionEnter: function () {
+		// console.log('Star collision', this.node.position);
+  
+	},*/
 	
 	/*update: function (dt) {
 		// 每帧判断和主角之间的距离是否小于收集距离
