@@ -332,7 +332,7 @@
     ],
     "_prefab": null,
     "_id": "b9vUj3etxOEYnxBlx1Mqb1",
-    "_opacity": 0,
+    "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
       "r": 255,
@@ -551,7 +551,7 @@
     ],
     "_prefab": null,
     "_id": "e9AXCokx9DcrlDQMXIuclk",
-    "_opacity": 0,
+    "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
       "r": 255,
@@ -882,6 +882,9 @@
       "__id__": 2
     },
     "_enabled": true,
+    "socket": null,
+    "playBtn": null,
+    "star": null,
     "entryDirect": -1,
     "serveInterval": 700,
     "startPlay": false,

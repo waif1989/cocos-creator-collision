@@ -126,11 +126,8 @@ cc.Class({
 		}, this);
 	},
 	
-	areYouReady: function () {
-		this.socket.send({
-			player: '0',
-			ask: '1'
-		});
+	newRandomFunc: function (Min, Max) {
+		return Math.random() * (Max - Min) + Min;
 	},
 	
 	testSocketFunc: function (player) {
@@ -165,27 +162,28 @@ cc.Class({
 	},
 	
 	onCollisionEnter: function () {
-		// console.log('player0-Collision');
 		this.game.leftOrRight = -1;
-		this.star.flyAwayFunc();
-	},
-	
-	/*update: function (dt) {
-		// 根据当前加速度方向每帧更新速度
-		if (this.accLeft) {
-			this.xSpeed -= this.accel * dt;
-		} else if (this.accRight) {
-			this.xSpeed += this.accel * dt;
-		}
-		// 限制主角的速度不能超过最大值
-		if ( Math.abs(this.xSpeed) > this.maxMoveSpeed ) {
-			// if speed reach limit, use max speed with current direction
-			this.xSpeed = this.maxMoveSpeed * this.xSpeed / Math.abs(this.xSpeed);
-		}
 		
-		// 根据当前速度更新主角的位置
-		this.node.x += this.xSpeed * dt;
-	},*/
+		var y0 = 0;
+		var y1 = 250;
+		var y2 = -110;
+		
+		var x0 = 250;
+		var x1 = 0;
+		var x2 = this.game.leftOrRight * 500;
+		
+		var time = this.newRandomFunc(1, 1.5);
+		
+		this.game.socket.send({
+			player: this.getQueryStringFunc('player'),
+			cbActionAll: {
+				time: time,
+				xArr: [x0, x1, x2],
+				yArr: [y0, y1, y2]
+			}
+		});
+		// this.star.flyAwayFunc();
+	},
 
     // LIFE-CYCLE CALLBACKS:
 

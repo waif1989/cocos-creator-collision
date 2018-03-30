@@ -49,10 +49,12 @@ cc.Class({
 		return Math.random() * (Max - Min) + Min;
 	},
 	
-	actionFinishFunc: function () {
+	/*actionFinishFunc: function () {
 		var self = this;
 		return cc.callFunc(function() {
+			
 			setTimeout(function () {
+				self.checkCollision = true;
 				// 当星星被收集时，调用 Game 脚本中的接口，生成一个新的星星
 				if (!self.game.gameOver) {
 					self.game.spawnNewStar();
@@ -63,7 +65,16 @@ cc.Class({
 					self.game.player.jumpAble = false;
 					self.node.destroy();
 				}
-			}, self.game.serveInterval);
+			}, 500);
+		}, this);
+	},*/
+	
+	actionFinishFunc: function () {
+		var self = this;
+		return cc.callFunc(function () {
+			setTimeout(function () {
+				self.checkCollision = true;
+			}, 500);
 		}, this);
 	},
 
@@ -71,19 +82,23 @@ cc.Class({
         return Math.random() * (Max - Min) + Min;
     },
 	
-	flyAwayFunc: function () {
+	flyAwayFunc: function (cbActionAll) {
 		if (this.checkCollision) {
 			this.checkCollision = false;
-			// var t = cc.random0To1() > 0.5 ? -1 : 1;
-			// console.log('this.game.leftOrRight---', this.game.leftOrRight);
+			this.onPicked();
+			this.node.stopAction(this.nowAction);
+			/*var actionAll = cc.spawn(
+				cc.moveTo(3, cc.p(this.game.leftOrRight * 750, 200)),
+				cc.rotateBy(3, 720),
+				this.actionFinishFunc()
+			);
+			this.node.runAction(actionAll.easing(cc.easeOut(3.0)));*/
 			var actionAll = cc.spawn(
-				cc.moveTo(2, cc.p(this.game.leftOrRight * 750, this.newRandomFunc(250, 500))),
+				cc.cardinalSplineTo(cbActionAll.time, [cc.p(cbActionAll.xArr[0], cbActionAll.yArr[0]), cc.p(cbActionAll.xArr[1], cbActionAll.yArr[1]), cc.p(cbActionAll.xArr[2], cbActionAll.yArr[2])], 0),
 				cc.rotateBy(2, 720),
 				this.actionFinishFunc()
 			);
-			this.node.stopAction(this.nowAction);
-			this.onPicked();
-			this.node.runAction(actionAll.easing(cc.easeOut(3.0)));
+			this.node.runAction(actionAll);
 		}
 	},
 	

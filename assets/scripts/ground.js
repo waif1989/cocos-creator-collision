@@ -28,7 +28,7 @@ cc.Class({
 		this.game.gameOver = true;
 		this.game.player.jumpAble = false;
 		this.game.gameOverShow();
-		this.star.node.destroy();
+		// this.star.node.destroy();
     },
 
     // LIFE-CYCLE CALLBACKS:

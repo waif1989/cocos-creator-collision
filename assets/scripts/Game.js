@@ -119,8 +119,11 @@ cc.Class({
 					cc.cardinalSplineTo(msg.actionAll.time, [cc.p(msg.actionAll.xArr[0], msg.actionAll.yArr[0]), cc.p(msg.actionAll.xArr[1], msg.actionAll.yArr[1]), cc.p(msg.actionAll.xArr[2], msg.actionAll.yArr[2])], 0),
 					cc.rotateBy(2, 720),
 				);
-				self.star.getComponent('Star').nowAction = actionAll;
+				self.star.nowAction = actionAll;
 				self.star.node.runAction(actionAll);
+			}
+			if (msg.cbActionAll) {
+				self.star.flyAwayFunc(msg.cbActionAll);
 			}
 		});
 	},
@@ -236,11 +239,11 @@ cc.Class({
 		// var y0 = this.newRandomFunc(this.groundY + 30, 90);
 		var y0 = 90;
 		var y1 = this.newRandomFunc(180, 190);
-		var y2 = this.groundY + 20;
+		var y2 = -110;
 		
 		var x0 = this.entryDirect * 480;
 		var x1 = 0;
-		var x2 = -1 * this.entryDirect * 480;
+		var x2 = -1 * this.entryDirect * 500;
 		
 		var time = this.newRandomFunc(1.5, 1.8);
 		
