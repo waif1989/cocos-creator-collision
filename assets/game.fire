@@ -885,6 +885,7 @@
     "socket": null,
     "playBtn": null,
     "star": null,
+    "groundY": 0,
     "entryDirect": -1,
     "serveInterval": 700,
     "startPlay": false,
